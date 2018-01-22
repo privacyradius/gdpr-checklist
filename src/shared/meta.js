@@ -1,0 +1,1 @@
+export const productName = 'The GDPR Checklist'

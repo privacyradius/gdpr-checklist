@@ -12,7 +12,7 @@ class Li extends React.Component {
     super()
     this.state = {
       isChecked: false,
-      isExpended: true
+      isExpended: false
     }
   }
 
@@ -32,7 +32,7 @@ class Li extends React.Component {
 
   render () {
     return (
-      <li className={`seed ${this.state.isExpended ? 'expend' : ''}`} style={{ position: 'absolute', left: 0, top: this.props.top }}>
+      <li className={`seed ${this.state.isExpended ? 'expend' : ''}`}>
         <div className="header">
           <div className={`check ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleToggle}>
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
@@ -50,7 +50,7 @@ class Li extends React.Component {
             <img src={Arrow} alt="" className="arrow" onClick={this.handleExpend} />
           </div>
         </div>
-        <div className="body">
+        <div className='body' style={{ display: this.state.isExpended ? 'block' : 'none' }} >
           <p>{this.props.description}<br/><br/>Read more:</p>
           <ul>
             {this.props.links.map(l => <li><a href={l} target="_blank">{l}</a></li>)}
@@ -64,7 +64,7 @@ class Li extends React.Component {
 const Section = props => (
   <div className="scrollspy" id={[props.id]}>
     <h2>{props.title}</h2>
-    <ul className="checklist" style={{ position: 'relative', height: props.items.length * 70 }}>
+    <ul className="checklist">
       { props.items.map((l, index) => <Li {...l} top={index * 70} />)}
     </ul>
   </div>

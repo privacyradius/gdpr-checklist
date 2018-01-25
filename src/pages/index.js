@@ -5,34 +5,61 @@ import Newsletter from '../components/Newsletter'
 // import Footer from '../components/Footer'
 import { steps } from '../data.js'
 import meta from '../shared/meta.js'
+import Arrow from '../images/arrow-bottom.svg'
 
-const Li = props => (
-  <li className="seed" style={{ position: 'absolute', left: 0, top: props.top }}>
-    <div className="header">
-      <div className="check">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
-          <g fill="none" fill-rule="evenodd" stroke-width="3" transform="translate(2 2)">
-            <path stroke="#9012FE" d="M6 11.402l2.874 2.934L16.06 7"></path>
-            <circle cx="11" cy="11" r="11"></circle>
-          </g>
-        </svg>
-      </div>
-      <div className="expend-bar">
-        <p>{props.title}</p>
-        <span className="category">{props.role}</span>
-      </div>
-      <div className="btn">
-        <img src="/images/arrow-bottom.svg" alt="" className="arrow" />
-      </div>
-    </div>
-    <div className="body">
-      <p>{props.description}<br/><br/>Read more:</p>
-      <ul>
-        {props.links.map(l => <li><a href={l} target="_blank">{l}</a></li>)}
-      </ul>
-    </div>
-  </li>
-)
+class Li extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      isChecked: false,
+      isExpended: true
+    }
+  }
+
+  handleExpend = () => {
+    this.setState(prevState => ({
+      ...prevState,
+      isExpended: !prevState.isExpended
+    }))
+  }
+
+  handleToggle = () => {
+    this.setState(prevState => ({
+      ...prevState,
+      isChecked: !prevState.isChecked
+    }))
+  }
+
+  render () {
+    return (
+      <li className={`seed ${this.state.isExpended ? 'expend' : ''}`} style={{ position: 'absolute', left: 0, top: this.props.top }}>
+        <div className="header">
+          <div className={`check ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleToggle}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <g fill="none" fillRule="evenodd" strokeWidth="3" transform="translate(2 2)">
+                <path stroke="#9012FE" d="M6 11.402l2.874 2.934L16.06 7"></path>
+                <circle cx="11" cy="11" r="11"></circle>
+              </g>
+            </svg>
+          </div>
+          <div className={`expend-bar ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleExpend}>
+            <p>{this.props.title}</p>
+            <span className="category">{this.props.role}</span>
+          </div>
+          <div className="btn">
+            <img src={Arrow} alt="" className="arrow" onClick={this.handleExpend} />
+          </div>
+        </div>
+        <div className="body">
+          <p>{this.props.description}<br/><br/>Read more:</p>
+          <ul>
+            {this.props.links.map(l => <li><a href={l} target="_blank">{l}</a></li>)}
+          </ul>
+        </div>
+      </li>
+    )
+  }
+}
 
 const Section = props => (
   <div className="scrollspy" id={[props.id]}>

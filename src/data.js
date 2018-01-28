@@ -1,7 +1,7 @@
 export const steps = [
   {
     id: 'section-1',
-    title:'Information you hold',
+    title:'Your data',
     items: [{ 
         id: 1, 
         title: 'Your company has a list of places where it keeps personal information and the ways data flows between them', 
@@ -117,7 +117,7 @@ export const steps = [
   },
   {
     id: 'section-3',
-    title:'Exercise of new rights',
+    title:'New rights',
     items: [,
       { 
         id: 1, 
@@ -245,7 +245,7 @@ export const steps = [
   },
   {
     id: 'section-5',
-    title:'Continuous follow-up',
+    title:'Follow-up',
     items: [{ 
         id: 1, 
         title: 'You regularly review policies for changes, effectiveness, changes in handling of data, changes to the state of affairs of other countries your data flows to,..', 

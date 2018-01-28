@@ -230,17 +230,6 @@ export const steps = [
       },
       { 
         id: 7, 
-        title: 'Your customers can easily object the processing of their data', 
-        role: ['controller'], 
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
-            }          
-        ]    
-      },
-      { 
-        id: 8, 
         title: 'Your customers can easily object to profiling or automated decision making that could impact them', 
         role: ['controller'], 
         description: 'This is only applicable if your company does profiling or any other automated decision making. If you do not already have a process defined for this, we\'ve made an easy online form below.',

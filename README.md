@@ -1,12 +1,10 @@
-# gatsby-starter-default
-The default Gatsby starter
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Quickstart
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+run npm install --global gatsby-cli
+run npm i in the root folder of this repository
+run gatsby develop
+visit localhost:8000 in your browser
 
 ## Deploy
 

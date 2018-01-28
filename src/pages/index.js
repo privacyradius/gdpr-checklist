@@ -6,6 +6,7 @@ import Newsletter from '../components/Newsletter'
 import { steps } from '../data.js'
 import meta from '../shared/meta.js'
 import Arrow from '../images/arrow-bottom.svg'
+import Footer from '../components/Footer'
 
 class Li extends React.Component {
   constructor() {
@@ -58,7 +59,7 @@ class Li extends React.Component {
         <div className='body' style={{ display: this.state.isExpended ? 'block' : 'none' }} >
           <p>{this.props.description}<br/><br/>Read more:</p>
           <ul>
-            {this.props.links.map(l => <li><a href={l.href} target="_blank">{l.title}</a></li>)}
+            {this.props.links.map((l, index) => <li key={index}><a href={l.href} target="_blank">{l.title}</a></li>)}
           </ul>
         </div>
       </li>
@@ -93,7 +94,7 @@ class Section extends React.Component {
              {
                 return ;
              }
-             return   <div className="scrollspy" id={[item.id]}>
+             return   <div className="scrollspy" id={[item.id]} key={index}>
                     <h2>{item.title}</h2>
                     <ul className="checklist">
                       { filtered_list.map( function(l, index)
@@ -102,7 +103,7 @@ class Section extends React.Component {
                                     ( this.props.processorSelected  && l.role.includes('processor')  )  )
                             
                             {
-                                return <Li {...l} top={index * 70} />
+                                return <Li {...l} key={index} top={index * 70} />
                             }
                             
                           }.bind(this)
@@ -162,11 +163,11 @@ class IndexPage extends React.Component {
               </div>
                 { steps.map( (function(s)
                     {
-                    return <Section list={[s]} controllerSelected={this.state.controllerSelected} processorSelected={this.state.processorSelected} /> 
+                    return <Section key={s.id} list={[s]} controllerSelected={this.state.controllerSelected} processorSelected={this.state.processorSelected} /> 
                     }).bind(this)
                     ) }
               <Newsletter />
-              {/* <Footer /> */}
+              <Footer />
             </div>
           </div>
         </div>

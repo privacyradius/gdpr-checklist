@@ -182,7 +182,7 @@ export const steps = [
         id: 3, 
         title: 'You automatically delete data that your business no longer has any use for', 
         role: ['processor', 'controller'], 
-        description: 'You should automate deletion of data types according to your own privacy policy. Data should be deleted when it is no longer required.',
+        description: 'You should automate deletion of data you no longer need. For example, you should automatically delete data for customers whose contracts have not been renewed.',
         links: [
             {href: "https://advisera.com/eugdpracademy/gdpr/principles-relating-to-processing-of-personal-data/",
               title: 'GDPR Article 5 – Principles relating to processing of personal data'

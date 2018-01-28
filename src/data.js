@@ -252,7 +252,7 @@ export const steps = [
     title:'Consent',
     items: [{ 
         id: 1, 
-        title: 'Ask consent when you start processing information about a person', 
+        title: 'Ask consent when you start processing a person\'s information', 
         role: [ 'controller'], 
         description: 'If your website collects personal information in some way, you should have an easily visble link to your privacy policy and confirm that the user accepts your terms and conditions.',
         links: [
@@ -304,7 +304,7 @@ export const steps = [
         id: 5, 
         title: 'When you update your privacy policy, you inform existing customers', 
         role: [ 'controller'], 
-        description: 'for example, by emailing upcoming changes of your privacy policy. Your communication should include in a simple way what has changed.',
+        description: 'for example, by emailing upcoming changes of your privacy policy. Your communication should explain in a simple way what has changed.',
         links: [
           { 
             href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",

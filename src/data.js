@@ -5,10 +5,12 @@ export const steps = [
     items: [{ 
         id: 1, 
         title: 'Your company has a list of places where it keeps personal information and the ways data flows between them', 
-        role: ['processor', 'controller'], 
+        role: [ 'controller'], 
         description: 'This could be a list of databases (eg Mysql), but it could also include offline datastores (paper).',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
+           title: 'GDPR Article 30 – Records of processing activities'
+          }
         ]  
       },
       { 
@@ -67,7 +69,9 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'For SaaS software companies, use the SaaS CTO security checklist as a starting point below.',
         links: [
-          'https://cto-security-checklist.sqreen.io/'
+          {title: "SaaS CTO security checklis",
+           href: 'https://cto-security-checklist.sqreen.io/'
+          }
         ]  
       },
       { 
@@ -125,8 +129,10 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
-        ]  
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
+        ]   
       },
       { 
         id: 2, 
@@ -134,7 +140,9 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
         ]  
       },
       { 
@@ -152,8 +160,10 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
-        ]  
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
+        ]   
       },
       { 
         id: 5, 
@@ -161,7 +171,9 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
         ]  
       },
       { 
@@ -170,8 +182,10 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
-        ]   
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
+        ]    
       },
       { 
         id: 7, 
@@ -179,8 +193,10 @@ export const steps = [
         role: ['controller'], 
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
-        ]   
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
+        ]    
       },
       { 
         id: 8, 
@@ -188,8 +204,10 @@ export const steps = [
         role: ['controller'], 
         description: 'This is only applicable if your company does profiling or any other automated decision making. If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
-        ]   
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
+        ]    
       }
     ]
   },
@@ -211,7 +229,9 @@ export const steps = [
         role: [ 'controller'], 
         description: 'It should be written in clear and simple terms and not conceal it\'s intent in any way. Failing to do so could void the agreement entirely. When providing services to children, the privacy policy should be easy enough for them to understand.',
         links: [
-          'https://tosdr.org/'
+          { title: "Watchdog service for terms of service: Terms of Service; Didn't Read",
+           href: 'https://tosdr.org/'
+          }
         ]  
       },
       { 
@@ -220,8 +240,10 @@ export const steps = [
         role: [ 'controller'], 
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-          'http://yourcompany.gdprform.io'
-        ] 
+            { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
+             href: 'http://yourcompany.gdprform.io'
+            }          
+        ]  
       },
       { 
         id: 4, 

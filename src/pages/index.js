@@ -58,7 +58,7 @@ class Li extends React.Component {
         <div className='body' style={{ display: this.state.isExpended ? 'block' : 'none' }} >
           <p>{this.props.description}<br/><br/>Read more:</p>
           <ul>
-            {this.props.links.map(l => <li><a href={l} target="_blank">{l}</a></li>)}
+            {this.props.links.map(l => <li><a href={l.href} target="_blank">{l.title}</a></li>)}
           </ul>
         </div>
       </li>

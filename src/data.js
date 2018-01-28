@@ -123,7 +123,7 @@ export const steps = [
         id: 7, 
         title: 'You report data breaches involving personal data to the local authority and to the people (data subjects) involved', 
         role: ['processor', 'controller'], 
-        description: '',
+        description: 'Personal data breaches should be reported within 72 hours to the local authority. You should report what data has been lost, what the consequences are and what countermeasures you have taken. Unless the data leaked was encrypted, you should also report the breach to the person (data subject) whose data you lost.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/notification-of-a-personal-data-breach-to-the-supervisory-authority/",
            title: 'GDPR Article 33 – Notification of a personal data breach to the supervisory authority'

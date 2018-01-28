@@ -70,7 +70,8 @@ const Footer = props => (
             avatar={willem}
             bio={[
               "Co-founder ", 
-              <a href='https://www.officient.io' target='_blank'>Officient</a>, 
+              <a href='https://www.knowlex.be' target='_blank'>Knowlex</a>, 
+              ', ', <a href='https://www.officient.io' target='_blank'>Officient</a>, 
               ', ', <a href='http://www.futureproofed.com/' target='_blank'>Futureproofed</a>, 
               ' & ', <a href='https://www.teamleader.eu' target='_blank'>Teamleader</a>, 
               ]}

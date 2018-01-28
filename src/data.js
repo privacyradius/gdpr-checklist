@@ -318,9 +318,9 @@ export const steps = [
     title:'Follow-up',
     items: [{ 
         id: 1, 
-        title: 'You regularly review policies for changes, effectiveness, changes in handling of data, changes to the state of affairs of other countries your data flows to,..', 
+        title: 'You regularly review policies for changes, effectiveness, changes in handling of data and changes to the state of affairs of other countries your data flows to.', 
         role: [ 'controller'], 
-        description: '',
+        description: 'You should follow up on best practies and changes to the policies in your local environment. Sign up at the bottom of this page to receive major updates to this list.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
            title: 'GDPR Article 25 – Data protection by design and by default'

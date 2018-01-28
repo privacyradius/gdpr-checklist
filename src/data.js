@@ -290,9 +290,9 @@ export const steps = [
       },
       { 
         id: 4, 
-        title: 'If you process children\'s personal data, verify their age and aks their consent', 
+        title: 'If you process children\'s personal data, verify their age and ask consent from their legal guardian', 
         role: [ 'controller'], 
-        description: '',
+        description: 'For children younger than 16, you need to make sure a legal guardian has given consent for data processing. If consent is given via your website, you should try to make sure approval was actually given by the legal guardian (and not by the child).',
         links: [
             {href: "https://advisera.com/eugdpracademy/gdpr/conditions-applicable-to-childs-consent-in-relation-to-information-society-services/",
               title: 'GDPR Article 8 – Conditions applicable to child’s consent in relation to information society services'

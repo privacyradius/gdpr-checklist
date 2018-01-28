@@ -45,7 +45,7 @@ const Footer = props => (
   <footer id='footer'>
     <span>Makers:</span>
     <div className="gradient">
-      <h5>About GPDR Checklist</h5>
+      <h5>About GDPR Checklist</h5>
       <div className="subtitle">GDPR Checklist is made by a small team from Belgium 🇧🇪 to help businesses navigate the GDPR landscape. 
       The project is inspired by <a href="https://cto-security-checklist.sqreen.io/">The SaaS CTO Security Checklist</a> created by <a href="https://www.sqreen.io">Sqreen.io</a></div>
 

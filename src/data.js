@@ -104,24 +104,33 @@ export const steps = [
         role: ['processor'], 
         description: 'You should inform your customers of the use of any sub-processor. They should consent by accepting your privacy policy',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/processor/",
+           title: 'GDPR Article 28 – Processor'
+          }
         ]  
       },
       { 
         id: 6, 
         title: 'If your business operates outside the EU, you have appointed a representative within the EU.', 
-        role: ['processor'], 
-        description: '',
-        links: [
-          ''
-        ]  
-      },{ 
-        id: 7, 
-        title: 'You report data breaches involving personal data to the local authority ', 
         role: ['processor', 'controller'], 
         description: '',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/representatives-of-controllers-or-processors-not-established-in-the-union/",
+           title: 'GDPR Article 27 – Representatives of controllers or processors not established in the Union'
+          }
+        ]  
+      },{ 
+        id: 7, 
+        title: 'You report data breaches involving personal data to the local authority and to the people (data subjects) involved', 
+        role: ['processor', 'controller'], 
+        description: '',
+        links: [
+          {href: "https://advisera.com/eugdpracademy/gdpr/notification-of-a-personal-data-breach-to-the-supervisory-authority/",
+           title: 'GDPR Article 33 – Notification of a personal data breach to the supervisory authority'
+          },
+          {href: "https://advisera.com/eugdpracademy/gdpr/communication-of-a-personal-data-breach-to-the-data-subject/",
+           title: 'GDPR Article 34 – Communication of a personal data breach to the data subject'
+          }
         ]  
       },{ 
         id: 8, 

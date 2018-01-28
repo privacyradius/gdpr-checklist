@@ -19,16 +19,20 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'This is a list of the actual types (columns) of information being held (eg Name, social security nr, address,..). For each type, a source should be documented, the parties this information is shared with, the purpose of the information and the duration for which the company will keep this information.',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
+           title: 'GDPR Article 30 – Records of processing activities'
+          }
         ]  
       },
       { 
         id: 3, 
         title: 'Your company has a publicy accessible privacy policy that outlines all you processes related to personal data. ', 
         role: ['processor', 'controller'], 
-        description: 'You should include information about all processes related to the processing of personal information. This document should have include or have links to the types of personal information the company holds, and where it holds them.',
+        description: 'You should include information about all processes related to the processing of personal information. This document should have include or have links to the types of personal information the company holds, and where it holds them. ',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
+           title: 'GDPR Article 30 – Records of processing activities'
+          }
         ]  
       },
       { 
@@ -37,7 +41,9 @@ export const steps = [
         role: [ 'controller'], 
         description: 'It should contain a reason for data processing, eg the fulfillment of a contract.',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/lawfulness-of-processing/",
+           title: 'GDPR Article 6 – Lawfulness of processing'
+          }
         ]  
       }
     ]

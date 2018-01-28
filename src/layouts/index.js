@@ -8,7 +8,7 @@ import './index.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <a href="https://github.com/sqreen/CTOSecurityChecklist" className="github-corner" target="_blank">
+    <a href="https://github.com/GDPRTracker/GDPR-checklist" className="github-corner" target="_blank">
       <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 250 250" fill={colors.blue}>
         <path d="M0 0l115 115h15l12 27 108 108V0z" fill="#FFF" />
         <path className="octo-arm" d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16" style={{ '-webkit-transform-origin': '130px 106px', 'transform-origin': '130px 106px' }}/>

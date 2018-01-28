@@ -2,11 +2,12 @@ export const steps = [
   {
     id: 'section-1',
     title:'Your data',
-    items: [{ 
+    items: [,
+      { 
         id: 1, 
-        title: 'Your company has a list of places where it keeps personal information and the ways data flows between them', 
-        role: [ 'controller', 'processor'], 
-        description: 'This could be a list of databases (eg Mysql), but it could also include offline datastores (paper).',
+        title: 'Your company has a list of all types of personal information it holds, the source of that information, who you share it with, what you do with it and how long you will keep it', 
+        role: ['processor', 'controller'], 
+        description: 'This is a list of the actual types (columns) of information being held (eg Name, social security nr, address,..). For each type, a source should be documented, the parties this information is shared with, the purpose of the information and the duration for which the company will keep this information.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
            title: 'GDPR Article 30 – Records of processing activities'
@@ -15,9 +16,9 @@ export const steps = [
       },
       { 
         id: 2, 
-        title: 'Your company has a list of all types of personal information it holds, the source of that information, who you share it with, what you do with it and how long you will keep it', 
-        role: ['processor', 'controller'], 
-        description: 'This is a list of the actual types (columns) of information being held (eg Name, social security nr, address,..). For each type, a source should be documented, the parties this information is shared with, the purpose of the information and the duration for which the company will keep this information.',
+        title: 'Your company has a list of places where it keeps personal information and the ways data flows between them', 
+        role: [ 'controller', 'processor'], 
+        description: 'This could be a list of databases (eg Mysql), but it could also include offline datastores (paper).',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
            title: 'GDPR Article 30 – Records of processing activities'

@@ -352,7 +352,7 @@ export const steps = [
         id: 2, 
         title: 'You should only transfer data outside of the EU to countries that offer an appropriate level of protection', 
         role: ['processor', 'controller'], 
-        description: 'You should also disclose cross-border data flows in your privacy policy.',
+        description: 'You should also disclose these cross-border data flows in your privacy policy.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/transfers-on-the-basis-of-an-adequacy-decision/",
            title: 'GDPR Article 45 – Transfers on the basis of an adequacy decision'

@@ -55,7 +55,7 @@ export const steps = [
         id: 1, 
         title: 'Your company has appointed a Data Protection Officer (DPO)', 
         role: ['processor', 'controller'], 
-        description: 'This person should have knowledge of GDPR guidelines as well as knowledge about the internal processes that involve personal information',
+        description: 'This person should have knowledge of GDPR guidelines as well as knowledge about the internal processes that involve personal information.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/designation-of-the-data-protection-officer/",
            title: 'GDPR Article 37 – Designation of the data protection officer'
@@ -66,7 +66,7 @@ export const steps = [
         id: 2, 
         title: 'Create awareness among decision makers about GPDR guidelines', 
         role: ['processor', 'controller'], 
-        description: 'Make sure key people and decision makers have up-to-date knowledge about the data protection legislation',
+        description: 'Make sure key people and decision makers have up-to-date knowledge about the data protection legislation.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
            title: 'GDPR Article 25 – Data protection by design and by default'
@@ -102,7 +102,7 @@ export const steps = [
         id: 5, 
         title: 'You have a list of sub-processors and your privacy policy mentions your use of this sub-processor', 
         role: ['processor'], 
-        description: 'You should inform your customers of the use of any sub-processor. They should consent by accepting your privacy policy',
+        description: 'You should inform your customers of the use of any sub-processor. They should consent by accepting your privacy policy.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/processor/",
            title: 'GDPR Article 28 – Processor'

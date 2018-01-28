@@ -236,7 +236,10 @@ export const steps = [
         links: [
             { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
              href: 'http://yourcompany.gdprform.io'
-            }          
+            },
+            {href: "https://advisera.com/eugdpracademy/gdpr/automated-individual-decision-making-including-profiling/",
+              title: 'Article 22 – Automated individual decision-making, including profiling'
+            }         
         ]    
       }
     ]

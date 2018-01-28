@@ -114,7 +114,7 @@ export const steps = [
         id: 6, 
         title: 'If your business operates outside the EU, you have appointed a representative within the EU.', 
         role: ['processor', 'controller'], 
-        description: 'If you have a business outside of the EU, but you collect data on EU citizens, you should assign a representative in one of the member states for your business. This person should handle all issues related to processing. In particular, a local authority should be able to contact this person.',
+        description: 'If you have a business outside of the EU and you collect data on EU citizens, you should assign a representative in one of the member states for your business. This person should handle all issues related to processing. In particular, a local authority should be able to contact this person.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/representatives-of-controllers-or-processors-not-established-in-the-union/",
            title: 'GDPR Article 27 – Representatives of controllers or processors not established in the Union'

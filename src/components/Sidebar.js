@@ -1,7 +1,6 @@
 import React from 'react'
 import { steps } from '../data.js'
 import logo from '../images/logo.svg'
-import burger from '../images/burger.svg'
 import { url } from '../shared/meta'
 
 const Sidebar = props => (

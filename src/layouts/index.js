@@ -1,6 +1,8 @@
 import React from 'react'
+import { withPrefix } from 'gatsby-link'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { url, productName } from '../shared/meta'
 
 import { colors} from '../shared/styles'
 import Header from '../components/Header'
@@ -21,6 +23,10 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         { name: 'description', content: 'Achieving GDPR Compliance shouldn\'t feel like a struggle. This is a basic checklist you can use to harden your GDPR compliancy' },
         { name: 'keywords', content: 'GDPR, Privacy, Data, Europe' },
+        { name: 'og:url', content: url },
+        { name: 'og:type', content: 'website' },
+        { name: 'og:title', content: productName },
+        { name: 'og:image', content: withPrefix() }
       ]}
     />
     <Header />

@@ -334,11 +334,17 @@ export const steps = [
     title:'Special cases',
     items: [{ 
         id: 1, 
-        title: 'Your business understands when you must conduct a DPIA for high-risk processing of sensitivie data', 
+        title: 'Your business understands when you must conduct a DPIA for high-risk processing of sensitive data.', 
         role: [ 'controller'], 
-        description: 'This is only applicable for large-scale data processing, profiling,..',
+        description: 'This is only applies to businesses carrying out large-scale data processing, profiling and other activities with high risk to the rights and freedoms of people. A special assessment should be carried out in these cases.',
         links: [
-          'https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/avg-nieuwe-europese-privacywetgeving/data-protection-impact-assessment-dpia'
+          {href: 'https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/avg-nieuwe-europese-privacywetgeving/data-protection-impact-assessment-dpia',
+           title: 'DPIA according to the Dutch local authority (Dutch)'
+          },
+          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-impact-assessment/",
+           title: 'GDPR Article 35 – Data protection impact assessment'
+          }
+          
         ]  
       },
       { 

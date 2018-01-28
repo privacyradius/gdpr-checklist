@@ -253,7 +253,7 @@ export const steps = [
         id: 1, 
         title: 'Ask consent when you start processing information about a person', 
         role: [ 'controller'], 
-        description: '',
+        description: 'If your website collects personal information in some way, you should have an easily visble link to your privacy policy and confirm that the user accepts your terms and conditions.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
            title: 'GDPR Article 7 – Conditions for consent'

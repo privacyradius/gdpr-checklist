@@ -12,6 +12,14 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto`
+        ]
+      }
+    },
+    {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './src/images/favicon.png',

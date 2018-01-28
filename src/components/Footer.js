@@ -22,11 +22,11 @@ const Container = Styled('div')`
 `
 
 const Maker = ({name, avatar, bio, twitter, linkedin, producthunt, github}) => (
-  <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
     <h2 style={{ color: 'white', textTransform: 'none', textAlign: 'center' }}>{name}</h2>
     <img src={avatar} style={{ maxWidth: '100px', borderRadius: '50px', margin: '0 auto' }} alt=""/>
     <p style={{ color: 'white', marginTop: '10px',  marginBottom: '10px', textAlign: 'center', lineHeight: '1.5em' }}>{bio}</p>
-    <div className='socials'>
+    <div className='socials' style={{ display: 'flex' }}>
       <a href={twitter}>
         <TwitterIcon id='ph' color='#FFF' size={16} />
       </a>
@@ -42,7 +42,7 @@ const Maker = ({name, avatar, bio, twitter, linkedin, producthunt, github}) => (
 
 
 const Footer = props => (
-  <footer>
+  <footer id='footer'>
     <span>Makers:</span>
     <div className="gradient">
       <h5>About GPDR Checklist</h5>
@@ -53,7 +53,7 @@ const Footer = props => (
       <Maker  
           name='Gertjan De Wide'
           avatar='https://pbs.twimg.com/profile_images/853360579066691587/FSk-94Bx_400x400.jpg'
-          bio='CEO/co-founder Apideck & Beatswitch/Crowdbase'
+          bio='Co-founder Apideck, Beatswitch & Crowdbase'
           linkedin='https://www.linkedin.com/in/gertjandewilde/'
           twitter='https://twitter.com/gertjanwilde'
           producthunt='https://www.producthunt.com/@gertjanwilde'
@@ -70,9 +70,9 @@ const Footer = props => (
           name='Johan De Keulenaer'
           avatar='https://pbs.twimg.com/profile_images/766597102491369473/_z7xDcW9_400x400.jpg'
           bio='Co-founder Beatswitch & Next Ventures.'
-          linkedin='https://www.linkedin.com/in/johandekeulenaer/'
+          linkedin='https://www.linkedin.com/in/johandekeulenaer'
           twitter='https://twitter.com/ActiveLife '
-          producthunt='https://www.producthunt.com/@gertjanwilde'
+          producthunt='https://www.producthunt.com/@johandekeulenaer'
           />
         </Makers>
     </div>

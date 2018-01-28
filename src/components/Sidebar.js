@@ -5,7 +5,6 @@ import burger from '../images/burger.svg'
 
 const Sidebar = props => (
   <div className="fixed">
-    <img src={burger} alt="" className="burger" />
     <img src={logo} alt="GDPR Checklist" className="logo" />
     <nav>
       <ul>

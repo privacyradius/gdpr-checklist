@@ -19,8 +19,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="The GDPR Checklist"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Achieving GDPR Compliance shouldn\'t feel like a struggle. This is a basic checklist you can use to harden your GDPR compliancy' },
+        { name: 'keywords', content: 'GDPR, Privacy, Data, Europe' },
       ]}
     />
     <Header />

@@ -1,3 +1,9 @@
+## How to add updates to the checklist
+
+- fork this repository
+- edit the file src/data.js
+- create a pull request
+
 
 ## Quickstart
 

@@ -29,7 +29,7 @@ export const steps = [
         id: 3, 
         title: 'Your company has a publicy accessible privacy policy that outlines all processes related to personal data.', 
         role: ['processor', 'controller'], 
-        description: 'You should include information about all processes related to the processing of personal information. This document should have include or have links to the types of personal information the company holds, and where it holds them. ',
+        description: 'You should include information about all processes related to the handling of personal information. This document should include (or have links to) the types of personal information the company holds, and where it holds them. ',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
            title: 'GDPR Article 30 – Records of processing activities'

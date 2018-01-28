@@ -37,7 +37,7 @@ class Li extends React.Component {
           <div className={`check ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleToggle}>
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
               <g fill="none" fillRule="evenodd" strokeWidth="3" transform="translate(2 2)">
-                <path stroke="#9012FE" d="M6 11.402l2.874 2.934L16.06 7"></path>
+                <path stroke="#057ee6" d="M6 11.402l2.874 2.934L16.06 7"></path>
                 <circle cx="11" cy="11" r="11"></circle>
               </g>
             </svg>

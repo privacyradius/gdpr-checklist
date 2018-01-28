@@ -57,7 +57,9 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'This person should have knowledge of GDPR guidelines as well as knowledge about the internal processes that involve personal information',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/designation-of-the-data-protection-officer/",
+           title: 'GDPR Article 37 – Designation of the data protection officer'
+          }
         ]  
       },
       { 
@@ -66,7 +68,9 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'Make sure key people and decision makers have up-to-date knowledge about the data protection legislation',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
+           title: 'GDPR Article 25 – Data protection by design and by default'
+          }
         ]  
       },
       { 
@@ -77,6 +81,9 @@ export const steps = [
         links: [
           {title: "SaaS CTO security checklis",
            href: 'https://cto-security-checklist.sqreen.io/'
+          },
+          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
+           title: 'GDPR Article 25 – Data protection by design and by default'
           }
         ]  
       },
@@ -86,7 +93,9 @@ export const steps = [
         role: ['processor'], 
         description: 'A lot of security vulnerabilities involve cooperation of an unwitting person with access to internal systems. Make sure your employees are aware of these risks.',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
+           title: 'GDPR Article 25 – Data protection by design and by default'
+          }
         ]  
       },
       { 

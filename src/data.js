@@ -253,7 +253,9 @@ export const steps = [
         role: [ 'controller'], 
         description: '',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
+           title: 'GDPR Article 7 – Conditions for consent'
+          }
         ]  
       },
       { 
@@ -264,6 +266,9 @@ export const steps = [
         links: [
           { title: "Watchdog service for terms of service: Terms of Service; Didn't Read",
            href: 'https://tosdr.org/'
+          },
+          {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
+           title: 'GDPR Article 7.2 – Conditions for consent'
           }
         ]  
       },
@@ -275,7 +280,10 @@ export const steps = [
         links: [
             { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
              href: 'http://yourcompany.gdprform.io'
-            }          
+            },
+            {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
+              title: 'GDPR Article 7.3 – Conditions for consent'
+            }       
         ]  
       },
       { 
@@ -307,7 +315,9 @@ export const steps = [
         role: [ 'controller'], 
         description: '',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
+           title: 'GDPR Article 25 – Data protection by design and by default'
+          }
         ]  
       }
     ]

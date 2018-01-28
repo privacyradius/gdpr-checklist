@@ -183,7 +183,9 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'You should automate deletion of data types according to your own privacy policy. Data should be deleted when it is no longer required.',
         links: [
-          ''
+            {href: "https://advisera.com/eugdpracademy/gdpr/principles-relating-to-processing-of-personal-data/",
+              title: 'GDPR Article 5 – Principles relating to processing of personal data'
+            } 
         ]  
       },
       { 

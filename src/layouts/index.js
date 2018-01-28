@@ -1,8 +1,8 @@
 import React from 'react'
-import { withPrefix } from 'gatsby-link'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { url, productName } from '../shared/meta'
+import { url, productName, description } from '../shared/meta'
+import social from '../images/github.png'
 
 import { colors} from '../shared/styles'
 import Header from '../components/Header'
@@ -21,12 +21,23 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="The GDPR Checklist"
       meta={[
-        { name: 'description', content: 'Achieving GDPR Compliance shouldn\'t feel like a struggle. This is a basic checklist you can use to harden your GDPR compliancy' },
+        { name: 'description', content: description },
         { name: 'keywords', content: 'GDPR, Privacy, Data, Europe' },
         { name: 'og:url', content: url },
         { name: 'og:type', content: 'website' },
         { name: 'og:title', content: productName },
-        { name: 'og:image', content: withPrefix() }
+        { name: 'og:site_name', content: productName },
+        { name: 'og:image', content: social },
+        { name: 'og:description', content: description },
+        { name: 'og:locale', content: 'en_US' },
+        { name: 'article:author', content: 'GDPRTracker' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:site', content: '@GDPRTracker' },
+        { name: 'twitter:creator', content: '@GDPRTracker' },
+        { name: 'twitter:url', content: url },
+        { name: 'twitter:title', content: productName },
+        { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: social }
       ]}
     />
     <Header />

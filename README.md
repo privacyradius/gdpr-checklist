@@ -1,3 +1,5 @@
+<img src="https://github.com/GDPRTracker/GDPR-checklist/blob/master/src/images/github.png">
+
 ## How to add updates to the checklist
 
 - fork this repository

@@ -404,10 +404,10 @@ nav li.active a {
 }
 nav li a {
   font-family: "BG bold", sans-serif;
-  font-size: 1.35714rem;
+  font-size: 1.34rem;
   line-height: 1.9;
   letter-spacing: .1px;
-  color: #b8b8b8;
+  color: #999;
   display: inline-block;
   text-decoration: none;
   -webkit-transition: .2s ease;

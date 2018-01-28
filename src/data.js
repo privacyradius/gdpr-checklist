@@ -138,7 +138,9 @@ export const steps = [
         role: [ 'controller'], 
         description: '',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/processing-under-the-authority-of-the-controller-or-processor/",
+           title: 'GDPR Article 29 – Processing under the authority of the controller or processor'
+          }
         ]  
       }
     ]
@@ -155,7 +157,10 @@ export const steps = [
         links: [
             { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
              href: 'http://yourcompany.gdprform.io'
-            }          
+            },
+            {href: "https://advisera.com/eugdpracademy/gdpr/right-of-access-by-the-data-subject/",
+              title: 'GDPR Article 15 – Right of access by the data subject'
+            }
         ]   
       },
       { 
@@ -166,7 +171,10 @@ export const steps = [
         links: [
             { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
              href: 'http://yourcompany.gdprform.io'
-            }          
+            },
+            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-rectification/",
+              title: 'GDPR Article 16 – Right to rectification'
+            }         
         ]  
       },
       { 
@@ -186,7 +194,10 @@ export const steps = [
         links: [
             { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
              href: 'http://yourcompany.gdprform.io'
-            }          
+            },
+            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-erasure-right-to-be-forgotten/",
+              title: 'GDPR Article 17 – Right to erasure (‘right to be forgotten’)'
+            }           
         ]   
       },
       { 
@@ -197,7 +208,10 @@ export const steps = [
         links: [
             { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
              href: 'http://yourcompany.gdprform.io'
-            }          
+            },
+            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-restriction-of-processing/",
+              title: 'GDPR Article 18 – Right to restriction of processing'
+            }           
         ]  
       },
       { 
@@ -208,7 +222,10 @@ export const steps = [
         links: [
             { title: "GDPRform.io: automated online GPDR Form for exercising data subject's rights",
              href: 'http://yourcompany.gdprform.io'
-            }          
+            },
+            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-data-portability/",
+              title: 'GDPR Article 20 – Right to data portability'
+            }      
         ]    
       },
       { 

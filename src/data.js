@@ -294,7 +294,9 @@ export const steps = [
         role: [ 'controller'], 
         description: '',
         links: [
-          ''
+            {href: "https://advisera.com/eugdpracademy/gdpr/conditions-applicable-to-childs-consent-in-relation-to-information-society-services/",
+              title: 'GDPR Article 8 – Conditions applicable to child’s consent in relation to information society services'
+            } 
         ]  
       },
       { 
@@ -303,7 +305,10 @@ export const steps = [
         role: [ 'controller'], 
         description: 'for example, by emailing upcoming changes of your privacy policy. Your communication should include in a simple way what has changed.',
         links: [
-          ''
+          { 
+            href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
+            title: 'GDPR Article 7 – Conditions for consent'
+          } 
         ]  
       }
     ]
@@ -342,7 +347,9 @@ export const steps = [
         role: ['processor', 'controller'], 
         description: 'You should also disclose cross-border data flows in your privacy policy.',
         links: [
-          ''
+          {href: "https://advisera.com/eugdpracademy/gdpr/transfers-on-the-basis-of-an-adequacy-decision/",
+           title: 'GDPR Article 45 – Transfers on the basis of an adequacy decision'
+          }
         ]  
       }
     ]

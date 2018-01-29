@@ -17,3 +17,8 @@
 ## Deployment
 
 - changes will automatically be deployed to https://gdprchecklist.io/
+
+## Attribution
+
+The project is inspired by [The SaaS CTO Security Checklist](https://cto-security-checklist.sqreen.io/) 
+created by [Sqreen.io](https://www.sqreen.io/)

@@ -52,7 +52,7 @@ const Footer = props => (
       <Makers>
         <Maker   
             key='gertjan'
-            name='Gertjan De Wide'
+            name='Gertjan De Wilde'
             avatar='https://pbs.twimg.com/profile_images/853360579066691587/FSk-94Bx_400x400.jpg'
             bio={[
               "Co-founder ", 

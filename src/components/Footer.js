@@ -43,6 +43,10 @@ const Maker = ({name, avatar, bio, twitter, linkedin, producthunt, github}) => (
 
 const Footer = props => (
   <footer id='footer'>
+    <p className='description' style={{ fontSize: '1em' }}>
+      <a  href='https://www.iubenda.com/privacy-policy/52432713'>Privacy Policy</a>
+    </p>
+
     <span>Makers:</span>
     <div className="gradient">
       <h5>About GDPR Checklist</h5>

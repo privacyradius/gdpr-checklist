@@ -11,6 +11,10 @@ export const steps = [
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
            title: 'GDPR Article 30 – Records of processing activities'
+          },
+          {
+            href: "https://gdprplug.in/gdpr-data-map/",
+            title: "GDPR Data Map Template"
           }
         ]  
       },

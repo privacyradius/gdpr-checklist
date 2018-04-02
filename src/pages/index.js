@@ -7,6 +7,7 @@ import { steps } from '../data.js'
 import meta from '../shared/meta.js'
 import Arrow from '../images/arrow-bottom.svg'
 import Footer from '../components/Footer'
+import Disclaimer from '../components/Disclaimer'
 
 class Li extends React.Component {
   constructor() {
@@ -167,6 +168,7 @@ class IndexPage extends React.Component {
                     }).bind(this)
                     ) }
               <Newsletter />
+              <Disclaimer />
               <Footer />
             </div>
           </div>

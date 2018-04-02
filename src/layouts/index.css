@@ -875,9 +875,35 @@ nav li a:hover {
   -webkit-animation: octocat-wave 560ms ease-in-out;
   animation: octocat-wave 560ms ease-in-out;
 }
+
+.disclaimer {
+  display: block;
+  margin-bottom: 100px;
+  color: white;
+  padding: 40px;
+  background-image: linear-gradient(105deg, #1cd268, #0fd05f);
+  border-radius: 5px;
+}
+.disclaimer h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+.disclaimer p { 
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+}
+
 footer {
   display: block;
   margin-bottom: 100px;
+  color: white;
 }
 footer>span {
   font-size: 1.07143rem;

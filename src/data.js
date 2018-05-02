@@ -31,7 +31,7 @@ export const steps = [
       },
       { 
         id: 3, 
-        title: 'Your company has a publicy accessible privacy policy that outlines all processes related to personal data.', 
+        title: 'Your company has a publicly accessible privacy policy that outlines all processes related to personal data.', 
         role: ['processor', 'controller'], 
         description: 'You should include information about all processes related to the handling of personal information. This document should include (or have links to) the types of personal information the company holds, and where it holds them. ',
         links: [

@@ -18,6 +18,11 @@ const TemplateWrapper = ({ children }) => (
       </svg>
     </a>
 
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{Your content}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{Your content}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{Your content}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{Your content}" />
+
     <Helmet
       title="The GDPR Checklist"
       meta={[
@@ -30,6 +35,13 @@ const TemplateWrapper = ({ children }) => (
         { name: 'og:image', content: social },
         { name: 'og:description', content: description },
         { name: 'og:locale', content: 'en_US' },
+
+        { name: 'og:type', content: 'website', prefix: 'og: http://ogp.me/ns#' },
+        { name: 'og:title', content: productName, prefix: 'og: http://ogp.me/ns#' },
+        { name: 'og:url', content: productName, prefix: 'og: http://ogp.me/ns#' },
+        { name: 'og:image', content: social, prefix: 'og: http://ogp.me/ns#' },
+        { name: 'og:description', content: description, prefix: 'og: http://ogp.me/ns#' },
+        
         { name: 'article:author', content: 'GDPRTracker' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@GDPRTracker' },

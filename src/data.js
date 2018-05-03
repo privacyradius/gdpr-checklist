@@ -109,8 +109,13 @@ export const steps = [
         role: ['processor'], 
         description: 'You should inform your customers of the use of any sub-processor. They should consent by accepting your privacy policy.',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/processor/",
-           title: 'GDPR Article 28 – Processor'
+          { 
+            href: "https://advisera.com/eugdpracademy/gdpr/processor/",
+            title: 'GDPR Article 28 – Processor'
+          },
+          {
+            href: "https://www.gdprtracker.io",
+            title: "GDPR Tracker - Keep track of the GDPR compliance of cloud services & subprocessors"
           }
         ]  
       },
@@ -145,6 +150,10 @@ export const steps = [
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/processing-under-the-authority-of-the-controller-or-processor/",
            title: 'GDPR Article 29 – Processing under the authority of the controller or processor'
+          },
+          {
+            href: "https://www.gdprtracker.io",
+            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
           }
         ]  
       }
@@ -161,7 +170,7 @@ export const steps = [
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
             { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
+             href: 'https://gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-of-access-by-the-data-subject/",
               title: 'GDPR Article 15 – Right of access by the data subject'
@@ -175,7 +184,7 @@ export const steps = [
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
             { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
+             href: 'https://gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-rectification/",
               title: 'GDPR Article 16 – Right to rectification'
@@ -200,7 +209,7 @@ export const steps = [
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
             { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
+             href: 'https://gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-erasure-right-to-be-forgotten/",
               title: 'GDPR Article 17 – Right to erasure (‘right to be forgotten’)'
@@ -214,7 +223,7 @@ export const steps = [
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
             { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
+             href: 'https://gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-restriction-of-processing/",
               title: 'GDPR Article 18 – Right to restriction of processing'
@@ -228,7 +237,7 @@ export const steps = [
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
             { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
+             href: 'https://gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-data-portability/",
               title: 'GDPR Article 20 – Right to data portability'
@@ -242,7 +251,7 @@ export const steps = [
         description: 'This is only applicable if your company does profiling or any other automated decision making. If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
             { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
+             href: 'https://gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/automated-individual-decision-making-including-profiling/",
               title: 'Article 22 – Automated individual decision-making, including profiling'
@@ -286,7 +295,7 @@ export const steps = [
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
             { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'http://yourcompany.gdprform.io'
+             href: 'https://gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
               title: 'GDPR Article 7.3 – Conditions for consent'
@@ -329,6 +338,10 @@ export const steps = [
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
            title: 'GDPR Article 25 – Data protection by design and by default'
+          },
+          {
+            href: "https://www.gdprtracker.io",
+            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
           }
         ]  
       }
@@ -360,6 +373,10 @@ export const steps = [
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/transfers-on-the-basis-of-an-adequacy-decision/",
            title: 'GDPR Article 45 – Transfers on the basis of an adequacy decision'
+          },
+          {
+            href: "https://www.gdprtracker.io",
+            title: "GDPR Tracker - Track hosting center locations & hosting partners from cloud services & subprocessors"
           }
         ]  
       }

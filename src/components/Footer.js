@@ -89,7 +89,7 @@ const Footer = props => (
             bio={[
               "Co-founder Next Ventures", 
               ', ', <a href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>, 
-              ' & ', <a href='https://www.crowdbase.co' target='_blank'>Crowdbase</a>, 
+              ' & ', <a href='https://www.wunderman.com' target='_blank'>CSD Wunderman</a>, 
               ]}
             linkedin='https://www.linkedin.com/in/johandekeulenaer'
             twitter='https://twitter.com/ActiveLife '

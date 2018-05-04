@@ -179,6 +179,11 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
+        <Persist
+          name={"index-page"}
+          data={this.state}
+          onMount={data => this.setState(data)}
+        />
       </div>
   )}
 }

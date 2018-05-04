@@ -1,4 +1,5 @@
 import React from 'react'
+import { Persist } from "react-persist"
 import Link from 'gatsby-link'
 import Sidebar from '../components/Sidebar'
 import Newsletter from '../components/Newsletter'
@@ -63,6 +64,11 @@ class Li extends React.Component {
             {this.props.links.map((l, index) => <li key={index}><a href={l.href} target="_blank">{l.title}</a></li>)}
           </ul>
         </div>
+        <Persist
+          name={this.props.section + ":item-" + this.props.id}
+          data={this.state}
+          onMount={data => this.setState(data)}
+        />
       </li>
     )
   }
@@ -104,7 +110,7 @@ class Section extends React.Component {
                                     ( this.props.processorSelected  && l.role.includes('processor')  )  )
                             
                             {
-                                return <Li {...l} key={index} top={index * 70} />
+                                return <Li {...l} key={index} top={index * 70} section={item.id} />
                             }
                             
                           }.bind(this)

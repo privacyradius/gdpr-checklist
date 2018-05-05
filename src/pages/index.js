@@ -1,4 +1,5 @@
 import React from 'react'
+import { Persist } from "react-persist"
 import Link from 'gatsby-link'
 import Sidebar from '../components/Sidebar'
 import Newsletter from '../components/Newsletter'
@@ -14,14 +15,14 @@ class Li extends React.Component {
     super()
     this.state = {
       isChecked: false,
-      isExpended: false,
+      isExpanded: false,
     }
   }
 
-  handleExpend = () => {
+  handleExpand = () => {
     this.setState(prevState => ({
       ...prevState,
-      isExpended: !prevState.isExpended
+      isExpanded: !prevState.isExpanded
     }))
   }
 
@@ -34,7 +35,7 @@ class Li extends React.Component {
 
   render () {
     return (
-      <li className={`seed ${this.state.isExpended ? 'expend' : ''}`}>
+      <li className={`seed ${this.state.isExpanded ? 'expand' : ''}`}>
         <div className="header">
           <div className={`check ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleToggle}>
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
@@ -44,7 +45,7 @@ class Li extends React.Component {
               </g>
             </svg>
           </div>
-          <div className={`expend-bar ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleExpend}>
+          <div className={`expand-bar ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleExpand}>
             <p>{this.props.title}</p>
            
                  {this.props.role.map(function(role, index){
@@ -54,15 +55,20 @@ class Li extends React.Component {
            
           </div>
           <div className="btn">
-            <img src={Arrow} alt="" className="arrow" onClick={this.handleExpend} />
+            <img src={Arrow} alt="" className="arrow" onClick={this.handleExpand} />
           </div>
         </div>
-        <div className='body' style={{ display: this.state.isExpended ? 'block' : 'none' }} >
+        <div className='body' style={{ display: this.state.isExpanded ? 'block' : 'none' }} >
           <p>{this.props.description}<br/><br/>Read more:</p>
           <ul>
             {this.props.links.map((l, index) => <li key={index}><a href={l.href} target="_blank">{l.title}</a></li>)}
           </ul>
         </div>
+        <Persist
+          name={this.props.section + ":item-" + this.props.id}
+          data={this.state}
+          onMount={data => this.setState(data)}
+        />
       </li>
     )
   }
@@ -104,7 +110,7 @@ class Section extends React.Component {
                                     ( this.props.processorSelected  && l.role.includes('processor')  )  )
                             
                             {
-                                return <Li {...l} key={index} top={index * 70} />
+                                return <Li {...l} key={index} top={index * 70} section={item.id} />
                             }
                             
                           }.bind(this)
@@ -173,6 +179,11 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
+        <Persist
+          name={"index-page"}
+          data={this.state}
+          onMount={data => this.setState(data)}
+        />
       </div>
   )}
 }

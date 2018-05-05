@@ -427,10 +427,10 @@ nav li a:hover {
 }
 .checklist li {
   width: 100%}
-.checklist li.expend .body {
+.checklist li.expand .body {
   display: block;
 }
-.checklist li.expend .arrow {
+.checklist li.expand .arrow {
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
 }
@@ -476,7 +476,7 @@ nav li a:hover {
   -webkit-transition: .2s ease;
   transition: .2s ease;
 }
-.checklist li .header .expend-bar {
+.checklist li .header .expand-bar {
   width: calc(100% - 120px);
   cursor: pointer;
   display: inline-block;
@@ -484,10 +484,10 @@ nav li a:hover {
   text-align: left;
   padding: 20px 0;
 }
-.checklist li .header .expend-bar.checked p {
+.checklist li .header .expand-bar.checked p {
   color: #b8b8b8;
 }
-.checklist li .header .expend-bar p {
+.checklist li .header .expand-bar p {
   font-family: sans-serif;
   font-size: 1.3rem;
   line-height: 1;
@@ -497,7 +497,7 @@ nav li a:hover {
   transition: .2s ease;
   margin-right: 5px;
 }
-.checklist li .header .expend-bar .category {
+.checklist li .header .expand-bar .category {
   font-family: sans-serif;
   font-size: 1.14286rem;
   font-style: italic;

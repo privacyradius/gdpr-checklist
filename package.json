@@ -15,7 +15,8 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "react-emotion": "^8.0.12",
     "react-helmet": "^5.2.0",
-    "react-icons": "^2.2.7"
+    "react-icons": "^2.2.7",
+    "react-persist": "^1.0.2"
   },
   "keywords": [
     "gatsby"

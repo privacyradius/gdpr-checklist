@@ -18,13 +18,8 @@ const TemplateWrapper = ({ children }) => (
       </svg>
     </a>
 
-    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{Your content}" />
-<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{Your content}" />
-<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{Your content}" />
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{Your content}" />
-
     <Helmet
-      title="The GDPR Checklist - A basic checklist you can use to harden your GDPR compliancy"
+      title="The GDPR Checklist - Your GDPR compliancy checklist"
       meta={[
         { name: 'description', content: description },
         { name: 'keywords', content: keywords },
@@ -50,8 +45,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'twitter:title', content: productName },
         { name: 'twitter:description', content: description },
         { name: 'twitter:image', content: social }
-      ]}
-    />
+      ]}>
+      <html lang="en" />
+    </Helmet>
     <Header />
     <div
       style={{

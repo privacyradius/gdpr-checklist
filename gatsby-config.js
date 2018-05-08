@@ -1,10 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'The GDPR Checklist',
+    siteUrl: 'https://gdprchecklist.io'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://gdprchecklist.io',
+        sitemap: 'https://gdprchecklist.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

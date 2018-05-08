@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { url, productName, description } from '../shared/meta'
+import { url, productName, description, keywords } from '../shared/meta'
 import social from '../images/github.png'
 
 import { colors} from '../shared/styles'
@@ -24,10 +24,10 @@ const TemplateWrapper = ({ children }) => (
 <meta prefix="og: http://ogp.me/ns#" property="og:url" content="{Your content}" />
 
     <Helmet
-      title="The GDPR Checklist"
+      title="The GDPR Checklist - A basic checklist you can use to harden your GDPR compliancy"
       meta={[
         { name: 'description', content: description },
-        { name: 'keywords', content: 'GDPR, Privacy, Data, Europe' },
+        { name: 'keywords', content: keywords },
         { name: 'og:url', content: url },
         { name: 'og:type', content: 'website' },
         { name: 'og:title', content: productName },

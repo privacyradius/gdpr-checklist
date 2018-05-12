@@ -6,8 +6,8 @@
   "dependencies": {
     "emotion": "^8.0.12",
     "emotion-server": "^8.0.12",
-    "gatsby": "^1.9.158",
-    "gatsby-link": "^1.6.34",
+    "gatsby": "^1.9.260",
+    "gatsby-link": "^1.6.44",
     "gatsby-plugin-emotion": "^1.1.11",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-google-analytics": "^1.0.16",
@@ -18,7 +18,8 @@
     "react-emotion": "^8.0.12",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
-    "react-persist": "^1.0.2"
+    "react-persist": "^1.0.2",
+    "react-scrollspy": "^3.3.5"
   },
   "keywords": [
     "gatsby"

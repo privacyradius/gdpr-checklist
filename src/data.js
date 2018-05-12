@@ -1,6 +1,6 @@
 export const steps = [
   {
-    id: 'section-1',
+    id: 'your-data',
     title:'Your data',
     items: [,
       { 
@@ -54,7 +54,7 @@ export const steps = [
     ]
   },
   {
-    id: 'section-2',
+    id: 'accountability-management',
     title:'Accountability & management',
     items: [{ 
         id: 1, 
@@ -160,7 +160,7 @@ export const steps = [
     ]
   },
   {
-    id: 'section-3',
+    id: 'new-rights',
     title:'New rights',
     items: [,
       { 
@@ -261,7 +261,7 @@ export const steps = [
     ]
   },
   {
-    id: 'section-4',
+    id: 'consent',
     title:'Consent',
     items: [{ 
         id: 1, 
@@ -328,7 +328,7 @@ export const steps = [
     ]
   },
   {
-    id: 'section-5',
+    id: 'follow-up',
     title:'Follow-up',
     items: [{ 
         id: 1, 
@@ -348,7 +348,7 @@ export const steps = [
     ]
   },
   {
-    id: 'section-6',
+    id: 'special-cases',
     title:'Special cases',
     items: [{ 
         id: 1, 

@@ -3,12 +3,12 @@ import { Persist } from "react-persist"
 import Link from 'gatsby-link'
 import Sidebar from '../components/Sidebar'
 import Newsletter from '../components/Newsletter'
-// import Footer from '../components/Footer'
 import { steps } from '../data.js'
 import meta from '../shared/meta.js'
 import Arrow from '../images/arrow-bottom.svg'
 import Footer from '../components/Footer'
 import Disclaimer from '../components/Disclaimer'
+import Scrollspy from 'react-scrollspy'
 
 class Li extends React.Component {
   constructor() {
@@ -158,7 +158,7 @@ class IndexPage extends React.Component {
               <p className="small description">
               This list is far from a legal exhaustive document, it merely tries to help you overcome the struggle.
              
-              <br/><br/>Feel free to <a href="https://github.com/GDPRTracker/checklist" target="_blank">contribute directly</a> on GitHub!
+              <br/><br/>Feel free to <a href="https://github.com/privacyradius/gdpr-checklist" target="_blank">contribute directly</a> on GitHub!
               </p>
               
               <div className="filter-bar">

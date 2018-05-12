@@ -991,3 +991,7 @@ footer .gradient a+a {
   margin-left: 0;
 }
 }
+
+.is-current a {
+  color: #057ee6;
+}

@@ -587,12 +587,12 @@ nav li a:hover {
   width: 100%}
 .newsletter .submit-button {
   background-color: #057ee6;
-  font-size: .85714rem;
+  font-size: 1rem;
   color: #fff;
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
-  padding: 10px 18px;
+  padding: 20px 30px;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -602,14 +602,18 @@ nav li a:hover {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
+  margin-top: 15px;
+}
+.newsletter a.submit-button {
+  text-decoration: none;
 }
 .newsletter .submit-button:hover {
   background-color: #9c2cfe;
 }
 @media screen and (max-width:960px) {
   .newsletter {
-  display: none;
-}
+    display: block;
+  }
 }.by-sqreen {
   margin-bottom: 115px;
 }

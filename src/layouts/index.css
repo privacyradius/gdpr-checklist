@@ -614,20 +614,6 @@ a.submit-button {
   .newsletter .submit-button {
     display: block;
   }
-}.by-sqreen {
-  margin-bottom: 115px;
-}
-.by-sqreen span {
-  font-size: 1.14286rem;
-  letter-spacing: -.5px;
-  color: #c8c8c8;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-.by-sqreen a {
-  display: inline-block;
-  vertical-align: middle;
 }
 .mobile-menu {
   display: none;
@@ -796,17 +782,6 @@ a.submit-button {
 }
 .mobile-menu .social-mob li a:hover svg path {
   fill: #057ee6;
-}
-.mobile-menu .by-sqreen {
-  margin-bottom: 30px;
-}
-.mobile-menu .by-sqreen span {
-  color: rgba(255, 255, 255, .5);
-  margin-right: 10px;
-}
-.mobile-menu .by-sqreen a {
-  display: inline-block;
-  vertical-align: middle;
 }
 @media screen and (min-width:961px) {
   .mobile-menu {
@@ -1000,4 +975,9 @@ footer .gradient a+a {
 }
 .is-current a {
   color: #057ee6;
+}
+@media screen and (max-width:960px) {
+  .newsletter-sidebar {
+    display: none;
+  }
 }

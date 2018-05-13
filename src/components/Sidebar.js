@@ -43,7 +43,7 @@ const Sidebar = props => (
         </li>
       </ul>
     </div>
-    <div className='newsletter'>
+    <div className='newsletter-sidebar'>
       <a href="http://eepurl.com/duyFHH" className="submit-button" style={{ marginTop: '10px' }}>Newsletter</a>
     </div>
   </div>

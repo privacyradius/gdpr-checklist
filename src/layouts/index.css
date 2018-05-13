@@ -585,7 +585,7 @@ nav li a:hover {
   flex: none;
   max-width: 250px;
   width: 100%}
-.newsletter .submit-button {
+.submit-button {
   background-color: #057ee6;
   font-size: 1rem;
   color: #fff;
@@ -604,14 +604,14 @@ nav li a:hover {
   flex: none;
   margin-top: 15px;
 }
-.newsletter a.submit-button {
+a.submit-button {
   text-decoration: none;
 }
-.newsletter .submit-button:hover {
+.submit-button:hover {
   background-color: #9c2cfe;
 }
 @media screen and (max-width:960px) {
-  .newsletter {
+  .newsletter .submit-button {
     display: block;
   }
 }.by-sqreen {
@@ -920,6 +920,9 @@ footer>span {
   margin-bottom: 12px;
   display: block;
 }
+footer a {
+  text-decoration: none;
+}
 footer .gradient {
   padding: 40px;
   background-image: linear-gradient(105deg, #057de6, #0864bd);
@@ -995,7 +998,6 @@ footer .gradient a+a {
   margin-left: 0;
 }
 }
-
 .is-current a {
   color: #057ee6;
 }

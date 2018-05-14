@@ -5,8 +5,9 @@ import ProductHuntIcon from 'react-icons/lib/fa/product-hunt'
 import TwitterIcon from 'react-icons/lib/fa/twitter'
 import LinkedinIcon from 'react-icons/lib/fa/linkedin'
 import Styled, { css } from 'react-emotion'
+import Img from 'gatsby-image'
 
-import willem from '../images/willem.jpg'
+import willem from '../images/makers/willem.jpg'
 
 const Makers = Styled('div')`
   display: flex;
@@ -21,10 +22,10 @@ const Container = Styled('div')`
   margin: 0 auto;
 `
 
-const Maker = ({name, avatar, bio, twitter, linkedin, producthunt, github}) => (
+const Maker = ({name, avatar, img, bio, twitter, linkedin, producthunt, github}) => (
   <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
     <h2 style={{ color: 'white', textTransform: 'none', textAlign: 'center' }}>{name}</h2>
-    <img src={avatar} style={{ maxWidth: '100px', borderRadius: '50px', margin: '0 auto' }} alt=""/>
+    { img !== undefined ? <Img resolutions={img.resolutions} style={{ maxWidth: '100px', borderRadius: '50px', margin: '0 auto' }} /> : '' }
     <p style={{ color: 'white', marginTop: '10px',  marginBottom: '10px', textAlign: 'center', lineHeight: '1.5em' }}>{bio}</p>
     <div className='socials' style={{ display: 'flex' }}>
       {twitter !== undefined ? <a href={twitter} target='_blank'>
@@ -57,6 +58,7 @@ const Footer = props => (
         <Maker   
             key='gertjan'
             name='Gertjan De Wilde'
+            img={props.gertjan}
             avatar='https://pbs.twimg.com/profile_images/853360579066691587/FSk-94Bx_400x400.jpg'
             bio={[
               "Co-founder ", 
@@ -71,6 +73,7 @@ const Footer = props => (
           <Maker 
             key='willem'
             name='Willem Delbare'
+            img={props.willem}
             avatar={willem}
             bio={[
               "Co-founder ", 
@@ -85,6 +88,7 @@ const Footer = props => (
           <Maker 
             key='johan'
             name='Johan De Keulenaer'
+            img={props.johan}
             avatar='https://pbs.twimg.com/profile_images/766597102491369473/_z7xDcW9_400x400.jpg'
             bio={[
               "Co-founder Next Ventures", 

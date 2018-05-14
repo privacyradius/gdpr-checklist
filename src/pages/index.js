@@ -175,7 +175,11 @@ class IndexPage extends React.Component {
                     ) }
               <Newsletter />
               <Disclaimer />
-              <Footer />
+              <Footer 
+                gertjan={this.props.data.gertjan} 
+                willem={this.props.data.willem} 
+                johan={this.props.data.johan} 
+                />
             </div>
           </div>
         </div>
@@ -189,3 +193,23 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    gertjan: imageSharp(id: { regex: "/makers/gertjan.jpg/" }) {
+      resolutions(width: 100) {
+        ...GatsbyImageSharpResolutions
+      }
+    },
+    willem: imageSharp(id: { regex: "/makers/willem.jpg/" }) {
+      resolutions(width: 100) {
+        ...GatsbyImageSharpResolutions
+      }
+    },
+    johan: imageSharp(id: { regex: "/makers/johan.jpg/" }) {
+      resolutions(width: 100) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+  }
+`

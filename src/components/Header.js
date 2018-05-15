@@ -24,7 +24,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          The GDPR Checklist
+          The GDPR Compliance Checklist
         </Link>
       </h1>
     </div>

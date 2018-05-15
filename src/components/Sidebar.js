@@ -17,7 +17,7 @@ const Sidebar = props => (
       </ul>
     </nav>
     <div className="social">
-      <h3>Share on</h3>
+      <h4>Share on</h4>
 
       <ul>
         <li>

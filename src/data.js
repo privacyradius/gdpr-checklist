@@ -21,7 +21,7 @@ export const steps = [
       { 
         id: 2, 
         title: 'Your company has a list of places where it keeps personal information and the ways data flows between them', 
-        role: [ 'controller', 'processor'], 
+        role: [ 'processor', 'controller'], 
         description: 'This could be a list of databases (eg Mysql), but it could also include offline datastores (paper).',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
@@ -383,3 +383,8 @@ export const steps = [
     ]
   }
 ]
+
+export const roles = {
+  'controller': 'Data Controller',
+  'processor': 'Data Processor',  
+}

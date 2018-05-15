@@ -3,7 +3,7 @@ import { Persist } from "react-persist"
 import Link from 'gatsby-link'
 import Sidebar from '../components/Sidebar'
 import Newsletter from '../components/Newsletter'
-import { steps } from '../data.js'
+import { steps, roles } from '../data.js'
 import meta from '../shared/meta.js'
 import Arrow from '../images/arrow-bottom.svg'
 import Footer from '../components/Footer'
@@ -47,11 +47,12 @@ class Li extends React.Component {
           </div>
           <div className={`expand-bar ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleExpand}>
             <p>{this.props.title}</p>
-           
-                 {this.props.role.map(function(role, index){
-                     
-                     return <span className="category" key={ index }>{role}</span>;
-                  })}
+            <ul>
+              {this.props.role.map(function(role, index){
+                return <li className={`role ${role}`} key={ index }>{roles[role]}</li>;
+              })}
+            </ul>
+                 
            
           </div>
           <div className="btn">
@@ -102,7 +103,7 @@ class Section extends React.Component {
                 return ;
              }
              return   <div className="scrollspy" id={[item.id]} key={index}>
-                    <h2>{item.title}</h2>
+                    <h3>{item.title}</h3>
                     <ul className="checklist">
                       { filtered_list.map( function(l, index)
                           {
@@ -150,8 +151,8 @@ class IndexPage extends React.Component {
           <div className='columns'>
             <Sidebar />
             <div className="col-9">
-              <p className="description first">Achieving GDPR Compliance shouldn't feel like a struggle. 
-              This is a basic checklist you can use to harden your GDPR compliancy. </p>
+              <h2 className="description first">Achieving GDPR Compliance shouldn't feel like a struggle. 
+              This is a basic checklist you can use to harden your GDPR compliancy.</h2>
               
               <p className="small description">if your organisation is determining the purpose of the storage or processing of personal information, it is considered a <b>controller</b>. If your organisation stores or processes personal data on behalf of another organisation, it is considered a <b>processor</b>. It is possible for your organisation to have both roles. Use the filter below to view only the relevant checklist items for your organisation.</p>
               
@@ -164,8 +165,8 @@ class IndexPage extends React.Component {
               <div className="filter-bar">
                 <h3>Select your organisation's role:</h3>
                 <ul className="selected-three">
-                  <li onClick={this.toggleController} className={this.state.controllerSelected ? 'is-active' : ''}>Data Controller: I determine why data is processed</li>
-                  <li onClick={this.toggleProcessor} className={this.state.processorSelected ? 'is-active' : ''}>Data Processor: I store or process data for someone else</li>
+                  <li onClick={this.toggleController} className={this.state.controllerSelected ? 'controller' : ''}><h2>Data Controller: I determine why data is processed</h2></li>
+                  <li onClick={this.toggleProcessor} className={this.state.processorSelected ? 'processor' : ''}><h2>Data Processor: I store or process data for someone else</h2></li>
                 </ul>
               </div>
                 { steps.map( (function(s)

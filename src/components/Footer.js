@@ -23,7 +23,7 @@ const Container = Styled('div')`
 `
 
 const Maker = ({name, avatar, img, bio, twitter, linkedin, producthunt, github}) => (
-  <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
+  <div key={name} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
     <h2 style={{ color: 'white', textTransform: 'none', textAlign: 'center' }}>{name}</h2>
     { img !== undefined ? <Img resolutions={img.resolutions} style={{ maxWidth: '100px', borderRadius: '50px', margin: '0 auto' }} /> : '' }
     <p style={{ color: 'white', marginTop: '10px',  marginBottom: '10px', textAlign: 'center', lineHeight: '1.5em' }}>{bio}</p>
@@ -51,49 +51,49 @@ const Footer = props => (
     <span>Makers:</span>
     <div className="gradient">
       <h5>About GDPR Checklist</h5>
-      <div className="subtitle">GDPR Checklist is made by a small team from Belgium 🇧🇪 to help businesses navigate the GDPR landscape. 
+      <div className="subtitle">GDPR Checklist is made by a small team from Belgium 🇧🇪 to help businesses navigate the GDPR landscape.
       The project is inspired by <a href="https://cto-security-checklist.sqreen.io/">The SaaS CTO Security Checklist</a> created by <a href="https://www.sqreen.io">Sqreen.io</a></div>
 
       <Makers>
-        <Maker   
+        <Maker
             key='gertjan'
             name='Gertjan De Wilde'
             img={props.gertjan}
             avatar='https://pbs.twimg.com/profile_images/853360579066691587/FSk-94Bx_400x400.jpg'
             bio={[
-              "Co-founder ", 
-              <a href='https://www.apideck.com' target='_blank'>Apideck</a>, 
-              ', ', <a href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>, 
-              ' & ', <a href='https://www.crowdbase.co' target='_blank'>Crowdbase</a>, 
+              "Co-founder ",
+              <a href='https://www.apideck.com' target='_blank'>Apideck</a>,
+              ', ', <a href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>,
+              ' & ', <a href='https://www.crowdbase.co' target='_blank'>Crowdbase</a>,
               ]}
             linkedin='https://www.linkedin.com/in/gertjandewilde/'
             twitter='https://twitter.com/gertjanwilde'
             producthunt='https://www.producthunt.com/@gertjanwilde'
             />
-          <Maker 
+          <Maker
             key='willem'
             name='Willem Delbare'
             img={props.willem}
             avatar={willem}
             bio={[
-              "Co-founder ", 
-              <a href='https://www.knowlex.be' target='_blank'>Knowlex</a>, 
-              ', ', <a href='https://www.officient.io' target='_blank'>Officient</a>, 
-              ', ', <a href='http://www.futureproofed.com/' target='_blank'>Futureproofed</a>, 
-              ' & ', <a href='https://www.teamleader.eu' target='_blank'>Teamleader</a>, 
+              "Co-founder ",
+              <a href='https://www.knowlex.be' target='_blank'>Knowlex</a>,
+              ', ', <a href='https://www.officient.io' target='_blank'>Officient</a>,
+              ', ', <a href='http://www.futureproofed.com/' target='_blank'>Futureproofed</a>,
+              ' & ', <a href='https://www.teamleader.eu' target='_blank'>Teamleader</a>,
               ]}
             linkedin='https://www.linkedin.com/in/willemdelbare/'
             producthunt='https://www.producthunt.com/@WillemDB'
             />
-          <Maker 
+          <Maker
             key='johan'
             name='Johan De Keulenaer'
             img={props.johan}
             avatar='https://pbs.twimg.com/profile_images/766597102491369473/_z7xDcW9_400x400.jpg'
             bio={[
-              "Co-founder Next Ventures", 
-              ', ', <a href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>, 
-              ' & ', <a href='https://www.wunderman.com' target='_blank'>CSD Wunderman</a>, 
+              "Co-founder Next Ventures",
+              ', ', <a href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>,
+              ' & ', <a href='https://www.wunderman.com' target='_blank'>CSD Wunderman</a>,
               ]}
             linkedin='https://www.linkedin.com/in/johandekeulenaer'
             twitter='https://twitter.com/ActiveLife '

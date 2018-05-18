@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { colors } from '../shared/styles'
+import CtaBanner from '../components/CtaBanner'
 
 const Header = () => (
   <div
@@ -9,11 +10,13 @@ const Header = () => (
       marginBottom: '1.45rem',
     }}
   >
+      <CtaBanner />
     <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.6rem 1.0875rem',
+          display: 'none'
       }}
     >
       <h1 style={{ margin: 0 }}>

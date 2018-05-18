@@ -328,7 +328,9 @@ body, html {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   z-index:10;
-  color:#999;}
+  color:#999;
+  width: 100%;
+}
 
 .filter-bar ul.selected-one li:nth-child(1) {
   color: #fff;
@@ -999,10 +1001,10 @@ footer .gradient a+a {
   }
 }
 .controller, .filter-bar li.controller {
-  background-color: #7601dd;
-  color: #FFF;
+  background-color: #E7E7F9;
+  color: #807DD3;
 }
 .processor, .filter-bar li.processor {
-  background-color: #e3c4ff;
-  color: #7601dd;
+  background-color: #E7F5F9;
+  color: #5FA2E1;
 }

@@ -47,9 +47,9 @@ class Li extends React.Component {
           </div>
           <div className={`expand-bar ${this.state.isChecked ? 'checked' : ''}`} onClick={this.handleExpand}>
             <p>{this.props.title}</p>
-            <ul>
+            <ul className='roles'>
               {this.props.role.map(function(role, index){
-                return <li className={`role ${role}`} key={ index }>{roles[role]}</li>;
+                return <li className={`${role}`} key={ index }>{roles[role]}</li>;
               })}
             </ul>
                  

@@ -313,7 +313,7 @@ body, html {
   margin-bottom: 0;
   display: block;
   font-family: sans-serif;
-  font-size: 1.28571rem;
+  font-size: 1.18571rem;
   line-height: 2;
   letter-spacing: .2px;
   text-transform: uppercase;
@@ -500,16 +500,19 @@ nav li a:hover {
 .checklist li .header .expand-bar p {
   font-family: sans-serif;
   font-size: 1.3rem;
-  line-height: 1;
+  line-height: 1.5;
   color: #333;
   display: inline;
   -webkit-transition: .2s ease;
   transition: .2s ease;
   margin-right: 5px;
 }
-.checklist li .header .expand-bar .role {
+.checklist li .header .expand-bar ul.roles {
+  margin-top: 10px;
+}
+.checklist li .header .expand-bar ul.roles li {
   font-family: sans-serif;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.9;
   display: inline;
@@ -518,7 +521,7 @@ nav li a:hover {
   border-radius: 2px;
   padding: 3px 8px;
 }
-.checklist li .header .expand-bar li.role:first-child {
+.checklist li .header .expand-bar ul.roles li:first-child {
   margin-right: 10px;
 }
 .checklist li .header .btn {

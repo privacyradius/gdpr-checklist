@@ -15,7 +15,7 @@ const CtaBanner = () => (
                     </a>
                 </div>
                 <p>
-                    <span>We're live on Product Hunt with GDPR Form. </span> Let us know your feedback and go check out our special offer 😉
+                    <span>We're live on Product Hunt with GDPR Form</span> An easy way to manage data subject access requests. Let us know your feedback.
                 </p>
                 <a href={linkProductHunt} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit Product Hunt!</a>
             </div>

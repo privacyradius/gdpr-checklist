@@ -5,24 +5,67 @@ import productHuntLogo from '../images/product-hunt-logo.png'
 
 const linkProductHunt = "https://www.producthunt.com/posts/gdpr-form"
 
-const CtaBanner = () => (
-    <div>
-        <div className={ctaBannerContainer}>
-            <div className={ctaBannerContentWrapper}>
-                <div className={productHuntLogoContainer}>
-                    <a href={linkProductHunt} rel="nofollow" target="_blank">
-                        <img src={productHuntLogo} alt="Product Hunt" />
-                    </a>
+class CtaBanner extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            show: false
+        }
+
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick() {
+        this.setState({
+            show: false
+        })
+        localStorage.setItem('hideBanner', true);
+    }
+
+    componentDidMount() {
+        const hideBanner = localStorage.getItem('hideBanner')
+        if (!hideBanner) {
+            this.setState({
+                show: true
+            })
+        }
+    }
+
+    render() {
+        const { show } = this.state;
+        if (!show) {
+            return false;
+        }
+        return(
+            <div>
+                <div className={ctaBannerContainer}>
+                    <div className={ctaBannerContentWrapper}>
+                        <div className={productHuntLogoContainer}>
+                            <a href={linkProductHunt} rel="nofollow" target="_blank">
+                                <img src={productHuntLogo} alt="Product Hunt" />
+                            </a>
+                        </div>
+                        <p>
+                            <span>We're live on Product Hunt with GDPR Form.</span> An easy way to manage data subject access requests. Let us know your feedback.
+                        </p>
+                        <a href={linkProductHunt} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit Product Hunt!</a>
+                        <div className={buttonCloseContainer} onClick={this.handleClick}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                                    fill="#fff"
+                                />
+                            </svg>
+                        </div>
+                        </div>
                 </div>
-                <p>
-                    <span>We're live on Product Hunt with GDPR Form</span> An easy way to manage data subject access requests. Let us know your feedback.
-                </p>
-                <a href={linkProductHunt} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit Product Hunt!</a>
+                <div className={mastHeadPusher} />
             </div>
-        </div>
-        <div className={mastHeadPusher} />
-    </div>
-)
+        )
+    }
+}
+
 export default CtaBanner;
 
 const ctaBannerContainer = css`
@@ -50,7 +93,7 @@ const ctaBannerContentWrapper = css`
         span {
             font-size: 16px;
             font-weight: 700;
-            margin-right: 10px;
+            margin-right: 5px;
         }
         
         a {
@@ -76,7 +119,7 @@ const ctaBannerContentWrapper = css`
         p {
             display: block;
             padding-left: 10px;
-            padding-right: 10px;
+            padding-right: 60px;
             text-align: center;
         }
         
@@ -97,6 +140,27 @@ const productHuntLogoContainer = css`
     
     @media ${largeDown} {
         display: none;
+    }
+`
+
+const buttonCloseContainer = css`
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: inline-block;
+    line-height: 1;
+    transform: translateY(-50%);
+    opacity: .8;
+    cursor: pointer;
+    
+    :hover {
+        opacity: 1;
+    }
+    
+    @media ${largeDown} {
+        top: 20px;
+        right: 20px;
+        transform: none;
     }
 `
 

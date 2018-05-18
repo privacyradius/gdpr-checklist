@@ -4,33 +4,8 @@ import { colors } from '../shared/styles'
 import CtaBanner from '../components/CtaBanner'
 
 const Header = () => (
-  <div
-    style={{
-      background: colors.blue,
-      marginBottom: '1.45rem',
-    }}
-  >
+  <div>
       <CtaBanner />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.6rem 1.0875rem',
-          display: 'none'
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          The GDPR Compliance Checklist
-        </Link>
-      </h1>
-    </div>
   </div>
 )
 

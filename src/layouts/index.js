@@ -42,7 +42,6 @@ const TemplateWrapper = ({ children }) => (
       ]}>
       <html lang="en" />
     </Helmet>
-    <Header />
     <div
       style={{
         margin: '0 auto',

@@ -144,6 +144,7 @@ export const steps = [
         ]
       },{
         id: 8,
+        title: 'There is a contract in place with any data processors that you share data with',
         role: [ 'controller'],
         description: 'The contract should contain explicit instructions for the storage or processing of data by the processor. The contract should set out the subject matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. For example, this could include a contract with your hosting provider. The same contract requirements apply when a processor engages a sub-processor to assist it in fulfilling processing activities on behalf of the controller',
         links: [
@@ -268,9 +269,9 @@ export const steps = [
     title:'Consent',
     items: [{
         id: 1,
-        title: 'Ask consent when you start processing a person\'s information',
+        title: 'Where processing is based on consent, such consent must be freely given, specific, informed, and revocable',
         role: [ 'controller'],
-        description: 'If your website collects personal information in some way, you should have an easily visble link to your privacy policy and confirm that the user accepts your terms and conditions.',
+        description: 'If your website collects personal information in some way, you should have an easily visble link to your privacy policy and confirm that the user accepts your terms and conditions. Consent requires an affirmative action, so pre-ticked boxes are not permitted.',
         links: [
           {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
            title: 'GDPR Article 7 – Conditions for consent'

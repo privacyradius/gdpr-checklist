@@ -148,6 +148,10 @@ export const steps = [
         role: [ 'controller'],
         description: 'The contract should contain explicit instructions for the storage or processing of data by the processor. For example, this could include a contract with your hosting provider.',
         links: [
+          {
+            href: "https://advisera.com/eugdpracademy/gdpr/processor/",
+            title: 'GDPR Article 28 – Processor'
+          },
           {href: "https://advisera.com/eugdpracademy/gdpr/processing-under-the-authority-of-the-controller-or-processor/",
            title: 'GDPR Article 29 – Processing under the authority of the controller or processor'
           },

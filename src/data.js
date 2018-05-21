@@ -144,9 +144,8 @@ export const steps = [
         ]
       },{
         id: 8,
-        title: 'There is a contract in place with any data processors that you share data with ',
         role: [ 'controller'],
-        description: 'The contract should contain explicit instructions for the storage or processing of data by the processor. For example, this could include a contract with your hosting provider.',
+        description: 'The contract should contain explicit instructions for the storage or processing of data by the processor. The contract should set out the subject matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. For example, this could include a contract with your hosting provider. The same contract requirements apply when a processor engages a sub-processor to assist it in fulfilling processing activities on behalf of the controller',
         links: [
           {
             href: "https://advisera.com/eugdpracademy/gdpr/processor/",

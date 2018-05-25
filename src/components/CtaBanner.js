@@ -3,7 +3,7 @@ import { css } from 'react-emotion'
 import { width, largeDown, smallOnly } from '../shared/styles'
 import productHuntLogo from '../images/product-hunt-logo.png'
 
-const linkProductHunt = "https://www.producthunt.com/posts/gdpr-form"
+const linkProductHunt = "https://www.producthunt.com/posts/gdpr-tracker-2"
 
 class CtaBanner extends React.Component {
     constructor(props) {
@@ -47,7 +47,7 @@ class CtaBanner extends React.Component {
                             </a>
                         </div>
                         <p>
-                            <span>We're live on Product Hunt with GDPR Form.</span> An easy way to manage data subject access requests. Let us know your feedback.
+                            <span>We're live on Product Hunt with GDPR Tracker.</span> An easier way to track the compliance of SaaS vendors. Let us know your feedback.
                         </p>
                         <a href={linkProductHunt} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit Product Hunt!</a>
                         <div className={buttonCloseContainer} onClick={this.handleClick}>

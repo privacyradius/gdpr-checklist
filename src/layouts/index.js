@@ -50,7 +50,6 @@ const TemplateWrapper = ({ children }) => (
         paddingTop: 0,
       }}
     >
-      <Header />
       {children()}
     </div>
   </div>

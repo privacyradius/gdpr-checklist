@@ -151,14 +151,15 @@ class IndexPage extends React.Component {
           <div className='columns'>
             <Sidebar />
             <div className="col-9">
+              <h1>The GDPR Compliance Checklist</h1>
+              <h2 className="description first">Achieving GDPR Compliance shouldn't feel like a struggle.
+              This is a basic checklist you can use to harden your GDPR compliancy.</h2>
+
               <div style={{ marginTop: '50px', textAlign: 'center', border: '1px solid #EEE', padding: '10px', marginBottom: '20px' }}>
                 <a href="https://app.gdprform.io/register?coupon=earlybird&utm_source=gdprchecklist.op&utm_medium=banner&utm_campaign=gdpr_checklist_early_bird" style={{ color: '#777', textDecoration: 'none', fontSize: '14px', lineHeight: '28px' }}>
                   <span style={{ background: '#41b541', borderRadius: '2px', marginTop: '20px', color: 'white', padding: '4px 6px' }}>New</span> Manage your data subjects requests with GDPR Form. Start your free trial today and receive a 20% discount. (From the makers of GDPR Tracker & Checklist)
                 </a>
               </div>
-              <h1>The GDPR Compliance Checklist</h1>
-              <h2 className="description first">Achieving GDPR Compliance shouldn't feel like a struggle.
-              This is a basic checklist you can use to harden your GDPR compliancy.</h2>
 
               <p className="small description">if your organisation is determining the purpose of the storage or processing of personal information, it is considered a <b>controller</b>. If your organisation stores or processes personal data on behalf of another organisation, it is considered a <b>processor</b>. It is possible for your organisation to have both roles. Use the filter below to view only the relevant checklist items for your organisation.</p>
 

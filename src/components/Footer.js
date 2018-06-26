@@ -1,6 +1,5 @@
 import React from 'react'
 
-import GithubIcon from 'react-icons/lib/go/mark-github'
 import ProductHuntIcon from 'react-icons/lib/fa/product-hunt'
 import TwitterIcon from 'react-icons/lib/fa/twitter'
 import LinkedinIcon from 'react-icons/lib/fa/linkedin'
@@ -22,7 +21,7 @@ const Container = Styled('div')`
   margin: 0 auto;
 `
 
-const Maker = ({name, avatar, img, bio, twitter, linkedin, producthunt, github}) => (
+const Maker = ({name, img, bio, twitter, linkedin, producthunt}) => (
   <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
     <h2 style={{ color: 'white', textTransform: 'none', textAlign: 'center' }}>{name}</h2>
     { img !== undefined ? <Img resolutions={img.resolutions} style={{ maxWidth: '100px', borderRadius: '50px', margin: '0 auto' }} /> : '' }
@@ -59,7 +58,6 @@ const Footer = props => (
             key='gertjan'
             name='Gertjan De Wilde'
             img={props.gertjan}
-            avatar='https://pbs.twimg.com/profile_images/853360579066691587/FSk-94Bx_400x400.jpg'
             bio={[
               "Co-founder ",
               <a key="apideck" href='https://www.apideck.com' target='_blank'>Apideck</a>,
@@ -74,7 +72,6 @@ const Footer = props => (
             key='willem'
             name='Willem Delbare'
             img={props.willem}
-            avatar={willem}
             bio={[
               "Co-founder ",
               <a key="knowles" href='https://www.knowlex.be' target='_blank'>Knowlex</a>,
@@ -89,7 +86,6 @@ const Footer = props => (
             key='johan'
             name='Johan De Keulenaer'
             img={props.johan}
-            avatar='https://pbs.twimg.com/profile_images/766597102491369473/_z7xDcW9_400x400.jpg'
             bio={[
               "Co-founder Next Ventures",
               ', ', <a key="beatswitch" href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>,

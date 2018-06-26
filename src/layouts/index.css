@@ -995,6 +995,9 @@ footer .gradient a+a {
 .is-current a {
   color: #057ee6;
 }
+.newsletter-sidebar {
+  margin-top: 30px;
+}
 @media screen and (max-width:960px) {
   .newsletter-sidebar {
     display: none;

@@ -173,8 +173,8 @@ export const steps = [
         role: ['processor', 'controller'],
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-            { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'https://gdprform.io'
+            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
+             href: 'https://www.gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-of-access-by-the-data-subject/",
               title: 'GDPR Article 15 – Right of access by the data subject'
@@ -187,8 +187,8 @@ export const steps = [
         role: ['processor', 'controller'],
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-            { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'https://gdprform.io'
+            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
+             href: 'https://www.gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-rectification/",
               title: 'GDPR Article 16 – Right to rectification'
@@ -212,8 +212,8 @@ export const steps = [
         role: ['processor', 'controller'],
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-            { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'https://gdprform.io'
+            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
+             href: 'https://www.gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-erasure-right-to-be-forgotten/",
               title: 'GDPR Article 17 – Right to erasure (‘right to be forgotten’)'
@@ -226,8 +226,8 @@ export const steps = [
         role: ['processor', 'controller'],
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-            { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'https://gdprform.io'
+            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
+             href: 'https://www.gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-restriction-of-processing/",
               title: 'GDPR Article 18 – Right to restriction of processing'
@@ -240,8 +240,8 @@ export const steps = [
         role: ['processor', 'controller'],
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-            { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'https://gdprform.io'
+            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
+             href: 'https://www.gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/right-to-data-portability/",
               title: 'GDPR Article 20 – Right to data portability'
@@ -254,8 +254,8 @@ export const steps = [
         role: ['controller'],
         description: 'This is only applicable if your company does profiling or any other automated decision making. If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-            { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'https://gdprform.io'
+            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
+             href: 'https://www.gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/automated-individual-decision-making-including-profiling/",
               title: 'Article 22 – Automated individual decision-making, including profiling'
@@ -298,8 +298,8 @@ export const steps = [
         role: [ 'controller'],
         description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
         links: [
-            { title: "GDPRform.io: automated online GDPR Form for exercising data subject's rights",
-             href: 'https://gdprform.io'
+            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
+             href: 'https://www.gdprform.io'
             },
             {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
               title: 'GDPR Article 7.3 – Conditions for consent'

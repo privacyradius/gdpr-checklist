@@ -33,6 +33,20 @@ module.exports = class HTML extends React.Component {
             name="google-site-verification" 
             content="rUNq8lzwm3z15gaVNUa43iEQ-gKP0WJhkb_qko81oTc" 
           />
+
+          {/* Schema.org tags */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{
+            __html: `
+                {
+                  "@context": "http://schema.org",
+                  "@type": "Organization",
+                  "name": "GDPR Checklist",
+                  "url": "https://www.gdprchecklist.io",
+                  "sameAs": [
+                      "https://twitter.com/gdpr_checklist"
+                  ]
+                } 
+            `}} />
           {this.props.headComponents}
           {css}
         </head>

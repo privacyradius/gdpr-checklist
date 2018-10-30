@@ -62,7 +62,7 @@ const Footer = props => (
               "Co-founder ",
               <a key="apideck" href='https://www.apideck.com' target='_blank'>Apideck</a>,
               ', ', <a key="beatswitch" href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>,
-              ' & ', <a key="crowdbase" href='https://www.crowdbase.co' target='_blank'>Crowdbase</a>,
+              ' & ', <a key="pr" href='https://www.privacyradius.com' target='_blank'>Privacy Radius</a>,
               ]}
             linkedin='https://www.linkedin.com/in/gertjandewilde/'
             twitter='https://twitter.com/gertjanwilde'
@@ -77,6 +77,7 @@ const Footer = props => (
               <a key="knowles" href='https://www.knowlex.be' target='_blank'>Knowlex</a>,
               ', ', <a key="officient" href='https://www.officient.io' target='_blank'>Officient</a>,
               ', ', <a key="futureproofed" href='http://www.futureproofed.com/' target='_blank'>Futureproofed</a>,
+              ', ', <a key="pr" href='https://www.privacyradius.com' target='_blank'>Privacy Radius</a>,
               ' & ', <a key="teamleader" href='https://www.teamleader.eu' target='_blank'>Teamleader</a>,
               ]}
             linkedin='https://www.linkedin.com/in/willemdelbare/'
@@ -87,7 +88,8 @@ const Footer = props => (
             name='Johan De Keulenaer'
             img={props.johan}
             bio={[
-              "Co-founder Next Ventures",
+              "Co-founder ",
+              <a key="pr" href='https://www.privacyradius.com' target='_blank'>Privacy Radius</a>,
               ', ', <a key="beatswitch" href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>,
               ' & ', <a key="wunderman" href='https://www.wunderman.com' target='_blank'>CSD Wunderman</a>,
               ]}

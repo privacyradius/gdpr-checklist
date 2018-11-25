@@ -183,11 +183,6 @@ class IndexPage extends React.Component {
                     ) }
               <Newsletter />
               <Disclaimer />
-              <Footer
-                gertjan={this.props.data.gertjan}
-                willem={this.props.data.willem}
-                johan={this.props.data.johan}
-                />
             </div>
           </div>
         </div>

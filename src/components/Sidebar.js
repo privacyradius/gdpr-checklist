@@ -20,6 +20,10 @@ const Sidebar = props => (
         <li><a href='https://www.gdprform.io'>GDPR Form</a></li>
         <li><a href='https://gdprtracker.io/'>GDPR Tracker</a></li>
       </ul>
+      <h4 style={{ marginTop: '20px' }}>Created by</h4>
+      <ul>
+        <li><a href='https://www.privacyradius.com'>Privacy Radius</a></li>
+      </ul>
     </nav>
     <div className='newsletter-sidebar'>
       <a href="http://eepurl.com/duyFHH" className="submit-button" style={{ marginTop: '10px' }}>Newsletter</a>

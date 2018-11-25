@@ -196,23 +196,3 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    gertjan: imageSharp(id: { regex: "/makers/gertjan.jpg/" }) {
-      resolutions(width: 100) {
-        ...GatsbyImageSharpResolutions
-      }
-    },
-    willem: imageSharp(id: { regex: "/makers/willem.jpg/" }) {
-      resolutions(width: 100) {
-        ...GatsbyImageSharpResolutions
-      }
-    },
-    johan: imageSharp(id: { regex: "/makers/johan.jpg/" }) {
-      resolutions(width: 100) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-  }
-`

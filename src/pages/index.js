@@ -182,6 +182,7 @@ class IndexPage extends React.Component {
                     }).bind(this)
                     ) }
               <Newsletter />
+              <Footer />
               <Disclaimer />
             </div>
           </div>

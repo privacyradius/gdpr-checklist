@@ -4,6 +4,7 @@ import { width, largeDown, smallOnly } from '../shared/styles'
 import productHuntLogo from '../images/product-hunt-logo.png'
 
 const linkProductHunt = "https://www.producthunt.com/posts/gdpr-tracker-2"
+const linkComplianceBoard = "https://complianceboard.io"
 
 class CtaBanner extends React.Component {
     constructor(props) {
@@ -42,14 +43,14 @@ class CtaBanner extends React.Component {
                 <div className={ctaBannerContainer}>
                     <div className={ctaBannerContentWrapper}>
                         <div className={productHuntLogoContainer}>
-                            <a href={linkProductHunt} rel="nofollow" target="_blank">
+                            {/* <a href={linkProductHunt} rel="nofollow" target="_blank">
                                 <img src={productHuntLogo} alt="Product Hunt" />
-                            </a>
+                            </a> */}
                         </div>
                         <p>
-                            <span>We're live on Product Hunt with GDPR Tracker.</span> An easier way to track the compliance of SaaS vendors. Let us know your feedback.
+                        With <span>ComplianceBoard</span> you can demonstrate your compliance, privacy and security to your customers in one holistic view.
                         </p>
-                        <a href={linkProductHunt} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit Product Hunt!</a>
+                        <a href={linkComplianceBoard} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit ComplianceBoard</a>
                         <div className={buttonCloseContainer} onClick={this.handleClick}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                 <path

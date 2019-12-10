@@ -9,6 +9,7 @@ import Arrow from '../images/arrow-bottom.svg'
 import Footer from '../components/Footer'
 import Disclaimer from '../components/Disclaimer'
 import Scrollspy from 'react-scrollspy'
+import CtaBanner from '../components/CtaBanner'
 
 class Li extends React.Component {
   constructor() {
@@ -151,6 +152,7 @@ class IndexPage extends React.Component {
           <div className='columns'>
             <Sidebar />
             <div className="col-9">
+              <CtaBanner />
               <h1>The GDPR Compliance Checklist</h1>
               <h2 className="description first">Achieving GDPR Compliance shouldn't feel like a struggle.
               This is a basic checklist you can use to harden your GDPR compliancy.</h2>

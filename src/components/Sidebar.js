@@ -23,7 +23,7 @@ const Sidebar = props => (
       </ul>
       <h4 style={{ marginTop: '20px' }}>Created by</h4>
       <ul>
-        <li><a href='https://www.privacyradius.com'>Privacy Radius</a></li>
+        <li><a href='https://www.complianceboard.io' target="_blank">ComplianceBoard</a></li>
       </ul>
     </nav>
     <div className='newsletter-sidebar'>

@@ -1,7 +1,7 @@
 export const steps = [
   {
-    id: 'your-data',
-    title:'Your data',
+    id: 'data',
+    title:'Data',
     items: [,
       {
         id: 1,
@@ -366,7 +366,6 @@ export const steps = [
           {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-impact-assessment/",
            title: 'GDPR Article 35 – Data protection impact assessment'
           }
-
         ]
       },
       {
@@ -385,10 +384,138 @@ export const steps = [
         ]
       }
     ]
+  },
+  {
+    id: 'user-rights',
+    title:'User Rights',
+    items: [
+      {
+        id: 1,
+        title: 'Right to receive transparent information, communication and modalities for the exercise of your rights.',
+        role: [ 'subject'],
+        description: 'The controller shall take appropriate measures to provide any information referred to in Articles 13 and 14 and any communication under Articles 15 to 22 and 34 relating to processing to you in a concise, transparent, intelligible and easily accessible form, using clear and plain language, in particular for any information addressed specifically to a child. The information shall be provided in writing, or by other means, including, where appropriate, by electronic means. When requested by you, the information may be provided orally, provided that your identity is proven by other means.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-12-gdpr/',
+           title: 'GDPR Article 12'
+          }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Right to receive specific information when your personal data are collected from you directly.',
+        role: [ 'subject'],
+        description: 'This information is : 1) The identity and the contact details of the controller and, where applicable, of the controller’s representative. 2) The contact details of the data protection officer, where applicable. 3) The purposes of the processing for which the personal data are intended as well as the legal basis for the processing. 4) Where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party. 5) The recipients or categories of recipients of the personal data, if any. 6) Where applicable, the fact that the controller intends to transfer personal data to a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means by which to obtain a copy of them or where they have been made available.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-13-gdpr/',
+           title: 'GDPR Article 13'
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Right to receive specific information when your personal data are not collected from you directly.',
+        role: [ 'subject'],
+        description: 'This information is : 1) The identity and the contact details of the controller and, where applicable, of the controller’s representative. 2) The contact details of the data protection officer, where applicable. 3) The purposes of the processing for which the personal data are intended as well as the legal basis for the processing. 4) The categories of personal data concerned. 5) The recipients or categories of recipients of the personal data, if any. 6)Where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-14-gdpr/',
+           title: 'GDPR Article 14'
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Right of access: You have the right to obtain from the controller confirmation as to whether or not your personal data are being processed, and, where that is the case, access to your personal data.',
+        role: [ 'subject'],
+        description: 'You also have to right to access the following information: 1) The purposes of the processing. 2) The categories of personal data concerned. 3) The recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations. 4) Where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period. 5) The existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing. 6) The right to lodge a complaint with a supervisory authority. 7) Where the personal data are not collected from the data subject, any available information as to their source. 8) The existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-15-gdpr/',
+           title: 'GDPR Article 15'
+          }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Right to rectification: You have the right to obtain from the controller without undue delay the rectification of inaccurate personal data.',
+        role: [ 'subject'],
+        description: 'Taking into account the purposes of the processing, you have the right to have incomplete personal data completed, including by means of providing a supplementary statement.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-16-gdpr/',
+           title: 'GDPR Article 16'
+          }
+        ]
+      },
+      {
+        id: 6,
+        title: 'Right to erasure: You have the right to obtain from the controller the erasure of your personal data without undue delay.',
+        role: [ 'subject'],
+        description: 'The controller shall have the obligation to erase your personal data without undue delay where one of the following grounds applies: 1) The personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed. 2) The data subject withdraws consent on which the processing is based according to point (a) of Article 6(1), or point (a) of Article 9(2), and where there is no other legal ground for the processing. 3) The data subject objects to the processing pursuant to Article 21(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2). 4) The personal data have been unlawfully processed. 5) The personal data have to be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject. 6) The personal data have been collected in relation to the offer of information society services referred to in Article 8(1).',
+        links: [
+          {href: 'https://gdpr-info.eu/art-17-gdpr/',
+           title: 'GDPR Article 17'
+          }
+        ]
+      },
+      {
+        id: 7,
+        title: 'Right to restriction of processing: You have the right to obtain from the controller restriction of processing.',
+        role: [ 'subject'],
+        description: 'This right applies in the following situations: 1) The accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data. 2) The processing is unlawful and the data subject opposes the erasure of the personal data and requests the restriction of their use instead. 3) The controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims. 4) The data subject has objected to processing pursuant to Article 21(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-18-gdpr/',
+           title: 'GDPR Article 18'
+          }
+        ]
+      },
+      {
+        id: 8,
+        title: 'Right to be notified regarding rectification or erasure of your personal data or restriction of processing: The controller shall communicate any rectification or erasure of your personal data or restriction of processing.',
+        role: [ 'subject'],
+        description: 'This right is carried out in accordance with Article 16, Article 17(1) and Article 18 to each recipient to whom the personal data have been disclosed, unless this proves impossible or involves disproportionate effort. The controller shall inform you about those recipients if you requests it.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-19-gdpr/',
+           title: 'GDPR Article 19'
+          }
+        ]
+      },
+      {
+        id: 9,
+        title: 'Right to portability: You have the right to receive your personal data, which you have provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which your personal data have been provided.',
+        role: [ 'subject'],
+        description: 'This processing is based on consent pursuant to point (a) of Article 6(1) or point (a) of Article 9(2) or on a contract pursuant to point (b) of Article 6(1); and the processing is carried out by automated means.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-20-gdpr/',
+           title: 'GDPR Article 20'
+          }
+        ]
+      },
+      {
+        id: 10,
+        title: 'Right to object: You have the right to object, on grounds relating to your particular situation, at any time to processing of your personal data which is based on point (e) or (f) of Article 6(1), including profiling based on those provisions.',
+        role: [ 'subject'],
+        description: 'The controller shall no longer process your personal data unless the controller demonstrates compelling legitimate grounds for the processing which override your interests, rights and freedoms or for the establishment, exercise or defence of legal claims.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-21-gdpr/',
+           title: 'GDPR Article 21'
+          }
+        ]
+      },
+      {
+        id: 11,
+        title: 'Right not to be subject to a decision based solely on automated processing: You have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects or similarly significantly affects you.',
+        role: [ 'subject'],
+        description: 'This does not applies if the decision: 1) is necessary for entering into, or performance of, a contract between the data subject and a data controller. 2) is authorised by Union or Member State law to which the controller is subject and which also lays down suitable measures to safeguard the data subject’s rights and freedoms and legitimate interests. 3) is based on the data subject’s explicit consent.',
+        links: [
+          {href: 'https://gdpr-info.eu/art-22-gdpr/',
+           title: 'GDPR Article 22'
+          }
+        ]
+      }
+    ]
   }
 ]
 
 export const roles = {
   'controller': 'Data Controller',
   'processor': 'Data Processor',
+  'subject': 'Data Subject',
 }

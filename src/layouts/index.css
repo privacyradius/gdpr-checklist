@@ -1011,3 +1011,8 @@ footer .gradient a+a {
   background-color: #E7F5F9;
   color: #5FA2E1;
 }
+
+.subject, .filter-bar li.subject {
+  background-color: rgb(249, 238, 231);
+  color: #ED6820;
+}

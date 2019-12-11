@@ -61,7 +61,12 @@ class Li extends React.Component {
           </div>
         </div>
         <div className='body' style={{ display: this.state.isExpanded ? 'block' : 'none' }} >
-          <p>{this.props.description}<br/><br/>Read more:</p>
+          {this.props.description.length > 0 &&
+          <p>{this.props.description}<br/><br/>Reference:</p>
+          }
+          {this.props.description.length === 0 &&
+          <p>Read More:</p>
+          }
           <ul>
             {this.props.links.map((l, index) => <li key={index}><a href={l.href} target="_blank">{l.title}</a></li>)}
           </ul>
@@ -90,7 +95,8 @@ class Section extends React.Component {
             item.items.map( function(l, index)
                           {
                             if( ( this.props.controllerSelected  && l.role.includes('controller')  ) ||
-                                    ( this.props.processorSelected  && l.role.includes('processor')  )  )
+                                    ( this.props.processorSelected  && l.role.includes('processor')  ) ||
+                                    ( this.props.subjectSelected  && l.role.includes('subject')  )  )
 
                             {
                                 filtered_list.push( l );
@@ -109,7 +115,8 @@ class Section extends React.Component {
                       { filtered_list.map( function(l, index)
                           {
                             if( ( this.props.controllerSelected  && l.role.includes('controller')  ) ||
-                                    ( this.props.processorSelected  && l.role.includes('processor')  )  )
+                                    ( this.props.processorSelected  && l.role.includes('processor')  ) ||
+                                    ( this.props.subjectSelected  && l.role.includes('subject')  )  )
 
                             {
                                 return <Li {...l} key={index} top={index * 70} section={item.id} />
@@ -134,7 +141,8 @@ class IndexPage extends React.Component {
     super()
     this.state = {
       processorSelected: true,
-      controllerSelected: true
+      controllerSelected: true,
+      subjectSelected: true
     }
   }
   toggleController = () => {
@@ -144,6 +152,10 @@ class IndexPage extends React.Component {
   toggleProcessor = () => {
      this.setState({ processorSelected : !this.state.processorSelected } );
   }
+
+  toggleSubject = () => {
+    this.setState({ subjectSelected : !this.state.subjectSelected } );
+ }
 
   render () {
     return (
@@ -172,15 +184,16 @@ class IndexPage extends React.Component {
               </p>
 
               <div className="filter-bar">
-                <h3>Select your organisation's role:</h3>
+                <h3>Select your role:</h3>
                 <ul className="selected-three">
                   <li onClick={this.toggleController} className={this.state.controllerSelected ? 'controller' : ''}><h2>Data Controller: I determine why data is processed</h2></li>
                   <li onClick={this.toggleProcessor} className={this.state.processorSelected ? 'processor' : ''}><h2>Data Processor: I store or process data for someone else</h2></li>
+                  <li onClick={this.toggleSubject} className={this.state.subjectSelected ? 'subject' : ''}><h2>Data Subject: My data is being stored or processed</h2></li>
                 </ul>
               </div>
                 { steps.map( (function(s)
                     {
-                    return <Section key={s.id} list={[s]} controllerSelected={this.state.controllerSelected} processorSelected={this.state.processorSelected} />
+                    return <Section key={s.id} list={[s]} controllerSelected={this.state.controllerSelected} processorSelected={this.state.processorSelected} subjectSelected={this.state.subjectSelected} />
                     }).bind(this)
                     ) }
               <Newsletter />

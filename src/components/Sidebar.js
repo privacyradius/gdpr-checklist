@@ -11,7 +11,7 @@ const Sidebar = props => (
     </a>
     <nav>
       <ul>
-        <Scrollspy items={['your-data', 'accountability-management', 'new-rights', 'consent', 'follow-up', 'special-cases']} currentClassName="is-current">
+        <Scrollspy items={['data', 'accountability-management', 'new-rights', 'consent', 'follow-up', 'special-cases', 'user-rights']} currentClassName="is-current">
           { steps.map(s => <li key={s.id}><a href={`#${s.id}`}>{s.title}</a></li>)}
         </Scrollspy>
       </ul>

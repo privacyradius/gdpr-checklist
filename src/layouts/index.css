@@ -233,6 +233,8 @@ body, html {
   left: calc((100vw/2) - (960px/2));
   padding-left: 20px;
   width: 190px;
+  overflow: scroll;
+  height: 100vh;
 }
 @media screen and (max-width:960px) {
   .fixed {

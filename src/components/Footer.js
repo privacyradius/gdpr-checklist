@@ -95,6 +95,7 @@ const Footer = props => (
           producthunt='https://www.producthunt.com/@johandekeulenaer'
         />
       </Makers>
+      <a href="javascript:window.Metomic('ConsentManager:show')">manage cookies</a>
     </div>
   </footer>
 )

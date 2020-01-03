@@ -24,12 +24,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-113160447-1'
-      }
-    },
-    {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './src/images/favicon.png',

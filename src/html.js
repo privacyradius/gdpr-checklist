@@ -49,6 +49,20 @@ module.exports = class HTML extends React.Component {
             `}} />
           {this.props.headComponents}
           {css}
+        
+
+        <script src="https://config.metomic.io/config.js?id=prj:988a7db4-229a-479f-878f-653cbe48c5cb" crossorigin charset="utf-8"></script>
+        <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
+        
+        <script type="text/x-metomic" data-micropolicy="statistics"  async src="https://www.googletagmanager.com/gtag/js?id=UA-113160447-1"></script>
+        <script type="text/x-metomic" data-micropolicy="statistics" dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-113160447-1');
+            `}} />
+
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -59,20 +73,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
         
-          <script dangerouslySetInnerHTML={{ 
-            __html: `
-            var _iub = _iub || [];
-            _iub.csConfiguration = {
-              cookiePolicyId: 52432713,
-              siteId: 1031622,
-              lang: "en"
-            };
-            (function (w, d) {
-              var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/cookie_solution/stable/iubenda_cs.js"; tag.parentNode.insertBefore(s, tag); };
-              if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; }
-            })(window, document);
-            `}}
-          />
         </body>
       </html>
     )

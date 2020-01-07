@@ -170,8 +170,8 @@ class IndexPage extends React.Component {
               This is a basic checklist you can use to harden your GDPR compliancy.</h2>
 
               <div style={{ marginTop: '50px', textAlign: 'center', border: '1px solid #EEE', padding: '10px', marginBottom: '20px' }}>
-                <a href="https://app.gdprform.io/register?coupon=earlybird&utm_source=gdprchecklist.op&utm_medium=banner&utm_campaign=gdpr_checklist_early_bird" style={{ color: '#777', textDecoration: 'none', fontSize: '14px', lineHeight: '28px' }}>
-                  <span style={{ background: '#41b541', borderRadius: '2px', marginTop: '20px', color: 'white', padding: '4px 6px' }}>New</span> Manage your data subjects requests with GDPR Form. Start your free trial today and receive a 20% discount. (From the makers of GDPR Tracker & Checklist)
+                <a href="https://complianceboard.io/" target="_blank" style={{ color: '#777', textDecoration: 'none', fontSize: '14px', lineHeight: '28px' }}>
+                  <span style={{ background: '#41b541', borderRadius: '2px', marginTop: '20px', color: 'white', padding: '4px 6px' }}>New</span> Boost customer trust with <b>ComplianceBoard</b>. Your trust center to share your compliance, privacy and security initiatives with your customers.
                 </a>
               </div>
 

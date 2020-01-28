@@ -3,8 +3,9 @@ import { css } from 'react-emotion'
 import { width, largeDown, smallOnly } from '../shared/styles'
 import productHuntLogo from '../images/product-hunt-logo.png'
 
-const linkProductHunt = "https://www.producthunt.com/posts/gdpr-tracker-2"
+const linkProductHunt = "https://www.producthunt.com/posts/data-breaches"
 const linkComplianceBoard = "https://complianceboard.io"
+const linkDataBreaches = "https://databreach.es"
 
 class CtaBanner extends React.Component {
     constructor(props) {
@@ -43,14 +44,17 @@ class CtaBanner extends React.Component {
                 <div className={ctaBannerContainer}>
                     <div className={ctaBannerContentWrapper}>
                         <div className={productHuntLogoContainer}>
-                            {/* <a href={linkProductHunt} rel="nofollow" target="_blank">
+                            <a href={linkProductHunt} rel="nofollow" target="_blank">
                                 <img src={productHuntLogo} alt="Product Hunt" />
-                            </a> */}
+                            </a>
                         </div>
-                        <p>
+                        {/* <p>
                         With <span>ComplianceBoard</span> you can demonstrate your compliance, privacy and security to your customers in one holistic view.
+                        </p> */}
+                        <p>
+                            We just launched Data Breaches, our latest community project where you can find information about data breaches, regulators and fines.
                         </p>
-                        <a href={linkComplianceBoard} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit ComplianceBoard</a>
+                        <a href={linkDataBreaches} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit Data Breaches</a>
                         <div className={buttonCloseContainer} onClick={this.handleClick}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                 <path

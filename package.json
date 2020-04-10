@@ -19,7 +19,7 @@
     "gatsby-plugin-sitemap": "^1.2.23",
     "gatsby-source-filesystem": "^1.5.35",
     "react-emotion": "^8.0.12",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^6.0.0",
     "react-icons": "^2.2.7",
     "react-persist": "^1.0.2",
     "react-scrollspy": "^3.3.5"

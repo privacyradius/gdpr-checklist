@@ -114,7 +114,7 @@ export const steps = [
             title: 'GDPR Article 28 – Processor'
           },
           {
-            href: "https://www.gdprtracker.io",
+            href: "https://www.compliancerank.com",
             title: "GDPR Tracker - Keep track of the GDPR compliance of cloud services & subprocessors"
           }
         ]

@@ -2,15 +2,16 @@ export const steps = [
   {
     id: 'data',
     title:'Data',
-    items: [,
+    items: [
       {
         id: 1,
         title: 'Your company has a list of all types of personal information it holds, the source of that information, who you share it with, what you do with it and how long you will keep it',
         role: ['processor', 'controller'],
         description: 'This is a list of the actual types (columns) of information being held (eg Name, social security nr, address,..). For each type, a source should be documented, the parties this information is shared with, the purpose of the information and the duration for which the company will keep this information.',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
-           title: 'GDPR Article 30 – Records of processing activities'
+          {
+            href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
+            title: 'GDPR Article 30 – Records of processing activities'
           },
           {
             href: "https://gdprplug.in/gdpr-data-map/",
@@ -115,7 +116,7 @@ export const steps = [
           },
           {
             href: "https://www.compliancerank.com",
-            title: "GDPR Tracker - Keep track of the GDPR compliance of cloud services & subprocessors"
+            title: "ComplianceRank - Keep track of the compliance of cloud services & subprocessors"
           }
         ]
       },
@@ -156,8 +157,8 @@ export const steps = [
            title: 'GDPR Article 29 – Processing under the authority of the controller or processor'
           },
           {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
+            href: "https://www.compliancerank.com",
+            title: "ComplianceRank - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
           }
         ]
       }
@@ -344,8 +345,8 @@ export const steps = [
            title: 'GDPR Article 25 – Data protection by design and by default'
           },
           {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
+            href: "https://www.compliancerank.com",
+            title: "ComplianceRank - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
           }
         ]
       }
@@ -378,8 +379,8 @@ export const steps = [
            title: 'GDPR Article 45 – Transfers on the basis of an adequacy decision'
           },
           {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting center locations & hosting partners from cloud services & subprocessors"
+            href: "https://www.compliancerank.com",
+            title: "ComplianceRank - Track hosting center locations & hosting partners from cloud services & subprocessors"
           }
         ]
       }

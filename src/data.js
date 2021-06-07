@@ -86,7 +86,7 @@ export const steps = [
         description: 'For SaaS software companies, use the SaaS CTO security checklist as a starting point below.',
         links: [
           {title: "SaaS CTO security checklist",
-           href: 'https://cto-security-checklist.sqreen.io/'
+           href: 'https://www.goldfiglabs.com/guide/saas-cto-security-checklist/'
           },
           {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
            title: 'GDPR Article 25 – Data protection by design and by default'
